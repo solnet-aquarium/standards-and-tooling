@@ -15,10 +15,10 @@ Git should be used for all projects.
 
 ## Commit messages
 
- - Commit messages should describe the changeset that the committed files represent. Example:
+ - Commit messages should describe the changeset that the committed files represent:
   > Implemented basic authentication for wibbles as they wobble around the flibbly wibbler
 
- - Where a commit is related to an artefact that exists in the real world, i.e. a JIRA ticket, the commit should be prefixed with the artefact's identifier, and the title or portion of the title, and an optional clarification. Example:
+ - Where a commit is related to an artefact that exists in the real world, i.e. a JIRA ticket, the commit should be prefixed with the artefact's identifier, and the title or portion of the title, and an optional clarification:
  
   > JIRA-253 Network restrictions should only be mandatory if wobbles are flobbing around the wibbly
  - Single word or unintelligible commit messages are not acceptable for any reason
