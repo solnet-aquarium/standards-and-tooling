@@ -23,9 +23,9 @@ Git should be used for all projects.
   > JIRA-253 Network restrictions should only be mandatory if wobbles are flobbing around the wibbly
  - Single word or unintelligible commit messages are not acceptable for any reason
 
-Git-flow is the standard branching model to be used. In some edge cases, Github-flow may be used.
-
 ## Git Flow
+
+Git-flow is the standard branching model to be used. In some edge cases, Github-flow may be used.
 
 *Large projects with standard release frequency*
 
