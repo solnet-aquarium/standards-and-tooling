@@ -25,9 +25,9 @@ Git should be used for all projects.
 
 ## Git Flow
 
-Git-flow is the standard branching model to be used. In some edge cases, Github-flow may be used.
-
 *Large projects with standard release frequency*
+
+Git-flow is the standard branching model to be used. In some edge cases, Github-flow may be used.
 
 Learn about the [Git-flow][gitflow-workflow] model and how to implement it. 
 
