@@ -45,6 +45,8 @@ The process of feature or bug development flows from one branch into another bef
  - [Gitflow Workflow][gitflow-workflow]
  - [A successful Git branching model][git-flow-successful-branching-model]
 
+---
+
 [gitflow-workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 [gitflow-general]: http://www.nczonline.net/blog/2013/05/21/github-workflows-inside-of-a-company/
 [git-flow-successful-branching-model]: http://nvie.com/posts/a-successful-git-branching-model/
@@ -64,6 +66,8 @@ Learn about the [Github-flow][github-flow] model and how to implement it.
  - [Github Flow][github-flow]
 
 [github-flow]: https://guides.github.com/introduction/flow/ 
+
+---
 
 ## Tooling
 
