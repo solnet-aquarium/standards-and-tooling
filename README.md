@@ -1,3 +1,2 @@
-# standards-and-tooling
-Language Standards &amp; Tooling
+# Solnet Standards & Tooling
 
