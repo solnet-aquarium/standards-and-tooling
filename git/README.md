@@ -29,7 +29,7 @@ Git should be used for all projects.
 
 Git-flow is the standard branching model to be used. In some edge cases, Github-flow may be used.
 
-Learn about the [Git-flow][gitflow-workflow] model and how to implement it. 
+Learn about the [Git-flow][gitflow-workflow] model and how to implement it. View the [Git-flow cheatsheet][git-flow-cheatsheet]
 
 > The Gitflow Workflow defines a strict branching model designed around the project release. While somewhat more complicated than the Feature Branch Workflow, this provides a robust framework for managing larger projects.
 
@@ -44,13 +44,14 @@ The process of feature or bug development flows from one branch into another bef
 
  - [Gitflow Workflow][gitflow-workflow]
  - [A successful Git branching model][git-flow-successful-branching-model]
+ - [Git-flow cheatsheet][git-flow-cheatsheet]
 
 ---
 
 [gitflow-workflow]: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 [gitflow-general]: http://www.nczonline.net/blog/2013/05/21/github-workflows-inside-of-a-company/
 [git-flow-successful-branching-model]: http://nvie.com/posts/a-successful-git-branching-model/
-
+[git-flow-cheatsheet]: http://danielkummer.github.io/git-flow-cheatsheet/
 ## Github Flow
 
 *Smaller projects or those with continuous deployments*
