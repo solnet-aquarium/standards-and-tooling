@@ -95,3 +95,14 @@ You should be competent with the git CLI. Learn about the [git CLI][git-cli].
 
 [smartgit]: http://www.syntevo.com/smartgit/
 
+#### SourceTree
+
+ - Free
+ - OS X & Windows
+ - Full support for graphical merging
+ - Git-flow & Hg-flow built in
+ - [Download][sourcetree]
+
+> SourceTree is a free graphical Git and Mercurial client from Atlassians. SourceTree runs on Mac OS X and Windows.
+
+[sourcetree]: https://www.sourcetreeapp.com/
