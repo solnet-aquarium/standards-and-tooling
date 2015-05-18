@@ -12,7 +12,6 @@ The [Google JavaScript Style Guide][google-style-guide] has been adopted as the 
 
 [johnpapa's Angular JS Style Guide][angular-style-guide] has been adopted as the company standard.  
 
-
 ### Required Reading
 
  - [Google JavaScript Style Guide][google-style-guide]
