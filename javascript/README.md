@@ -17,7 +17,7 @@ The [Google JavaScript Style Guide][google-style-guide] has been adopted as the 
 
 ## Automatic Formatting
 
-JSCS should be used to format JS files on save. Installation:
+JSCS must be used to format JS files on save. Installation:
 
 `npm install -g jscs`
 
