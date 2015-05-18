@@ -30,7 +30,7 @@ JSCS must be used to format JS files on save. Installation:
 
 ### Editor Plugins
 
-#### Vim: [Chiel92/vim-autoformat][vim-autoformat]
+**Vim: [Chiel92/vim-autoformat][vim-autoformat]**
 
 Add this to your `.vimrc`
 
@@ -39,11 +39,11 @@ let g:formatprg_js = 'jscs'
 autocmd BufWritePre,FileWritePre *.js silent! :Autoformat<CR>
 ```
 
-#### Eclipse
+**Eclipse**
 
 **TODO**
 
-#### IntelliJ
+**IntelliJ**
 
 **TODO**
 
@@ -59,7 +59,7 @@ JSCS must be used to lint JS files on save. Installation:
 
 ### Editor Plugins
 
-#### Vim: [scrooloose/syntastic][syntastic]
+**Vim: [scrooloose/syntastic][syntastic]**
 
 Add this to your `.vimrc`
 
@@ -67,11 +67,11 @@ Add this to your `.vimrc`
 let g:syntastic_javascript_checkers=['jscs']
 ```
 
-#### Eclipse
+**Eclipse**
 
 **TODO**
 
-#### IntelliJ
+**IntelliJ**
 
 **TODO**
 
