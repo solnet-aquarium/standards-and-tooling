@@ -44,6 +44,8 @@ autocmd BufWritePre,FileWritePre *.js silent! :Autoformat<CR>
 
 [vim-autoformat]: https://github.com/Chiel92/vim-autoformat
 
+- - -
+
 ## Linting
 
 JSCS must be used to lint JS files on save. Installation:
