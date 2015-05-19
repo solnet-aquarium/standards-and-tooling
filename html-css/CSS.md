@@ -16,6 +16,10 @@
 
 ## Automatic Formatting
 
+[CSSComb][css-comb] shall be used to automatically format CSS code.
+
+[csscomb]: https://github.com/csscomb/csscomb.js
+
 ### Editor Plugins
 
 **Vim**
