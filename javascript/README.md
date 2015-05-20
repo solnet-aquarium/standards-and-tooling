@@ -28,7 +28,7 @@ JSCS must be used to format JS files on save. Installation:
 
 `npm install -g jscs`
 
-If it isn't present already, add a [jscsrc][jscrc-config] file at the root of your project, with the filename `.jscsrc`.
+If it isn't present already, add a [jscsrc][jscs-config] file at the root of your project, with the filename `.jscsrc`.
 
 ### Editor Plugins
 
@@ -59,7 +59,7 @@ JSCS must be used to lint JS files on save. Installation:
 
 `npm install -g jscs`
 
-If it isn't present already, add a [jscsrc][jscrc-config] file at the root of your project, with the filename `.jscsrc`.
+If it isn't present already, add a [jscsrc][jscs-config] file at the root of your project, with the filename `.jscsrc`.
 
 ### Editor Plugins
 
