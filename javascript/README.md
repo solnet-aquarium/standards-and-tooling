@@ -28,6 +28,8 @@ JSCS must be used to format JS files on save. Installation:
 
 `npm install -g jscs`
 
+If it isn't present already, add a [jscsrc][jscrc-config] file at the root of your project, with the filename `.jscsrc`.
+
 ### Editor Plugins
 
 **Vim: [Chiel92/vim-autoformat][vim-autoformat]**
@@ -57,6 +59,8 @@ JSCS must be used to lint JS files on save. Installation:
 
 `npm install -g jscs`
 
+If it isn't present already, add a [jscsrc][jscrc-config] file at the root of your project, with the filename `.jscsrc`.
+
 ### Editor Plugins
 
 **Vim: [scrooloose/syntastic][syntastic]**
@@ -76,3 +80,4 @@ let g:syntastic_javascript_checkers=['jscs']
 **TODO**
 
 [syntastic]: https://github.com/scrooloose/syntastic
+[jscs-config]: https://github.com/solnetdigital/standards-and-tooling/blob/master/javascript/config/jscs.json
