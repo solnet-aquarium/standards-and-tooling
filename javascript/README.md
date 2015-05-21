@@ -56,15 +56,23 @@ NeoBundleLazy 'Chiel92/vim-autoformat', { 'autoload': { 'filetypes': ['javascrip
 
 **Sublime Text 3**
 
-First you will need to install SublimeLinter using Package Control. Use the
-[SublimeLinter documentation][sublime-linter-documentation] to do this.
+SublimeJSCSFormatter should be used to automatically format JavaScript code using JSCS.
 
-Search for the package SublimeLinter-jscs in Package Control and install it.
+This plugin can be installed via Package Control using the search term "JSCS Formatter".
 
-Note that you may have to add linting user preferences in order to begin using linting if you haven't already.
+The default configuration must be changed to ensure code is formatted on save.
+Modify the settings within the Preferences -> Package Settings -> JSCS Formatter -> Settings - User file,
+adding the following object to the root preferences JSON:
+
+```JSON
+{
+  "format_on_save": true
+}
+```
+
+See the [SublimeJSCSFormatter][sublime-jscs-formatter] documetation for further instructions.
 
 [vim-autoformat]: https://github.com/Chiel92/vim-autoformat
-[sublime-linter-documentation]: https://sublimelinter.readthedocs.org/en/latest/installation.html#installing-via-pc
 [sublime-text-3-jscs]: https://packagecontrol.io/packages/SublimeLinter-jscs
 
 - - -
@@ -95,5 +103,15 @@ let g:syntastic_javascript_checkers=['jscs']
 
 **TODO**
 
+**Sublime Text 3**
+
+First you will need to install SublimeLinter using Package Control. Use the
+[SublimeLinter documentation][sublime-linter-documentation] to do this.
+
+Search for the package SublimeLinter-jscs in Package Control and install it.
+
+Note that you may have to add linting user preferences in order to begin using linting if you haven't already.
+
 [syntastic]: https://github.com/scrooloose/syntastic
+[sublime-linter-documentation]: https://sublimelinter.readthedocs.org/en/latest/installation.html#installing-via-pc
 [jscs-config]: https://github.com/solnetdigital/standards-and-tooling/blob/master/javascript/config/jscs.json
