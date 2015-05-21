@@ -49,7 +49,12 @@ autocmd BufWritePre,FileWritePre *.js silent! :Autoformat<CR>
 
 **TODO**
 
+**Sublime Text 3**
+
+Follow the [Sublime Text 3 JSCS guide][sublime-text-3-jscs].
+
 [vim-autoformat]: https://github.com/Chiel92/vim-autoformat
+[sublime-text-3-jscs]: https://packagecontrol.io/packages/SublimeLinter-jscs
 
 - - -
 
