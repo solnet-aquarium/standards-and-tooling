@@ -34,6 +34,17 @@
 
 **TODO**
 
+**Sublime**
+
+[Sublime CSSComb]: https://github.com/csscomb/sublime-csscomb
+
+**Command Line**
+
+[CSSComb]: http://csscomb.com/
+```
+npm -g install csscomb
+```
+
 - - -
 
 ## Linting
@@ -49,3 +60,14 @@
 **IntelliJ**
 
 **TODO**
+
+**Sublime**
+
+[SublimeLinter-csslint]: https://github.com/SublimeLinter/SublimeLinter-csslint
+
+**Command line**
+
+[CSSLint]: https://github.com/CSSLint/csslint
+```
+npm -g install csslint
+```
