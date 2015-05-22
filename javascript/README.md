@@ -48,7 +48,18 @@ NeoBundleLazy 'Chiel92/vim-autoformat', { 'autoload': { 'filetypes': ['javascrip
 
 **Eclipse**
 
-**TODO**
+JSCS formatting is provided through the Tern.js plugin. Installation:
+
+Drag the "install" button from the [Tern js plugin][tern-js-plugin] page onto your Eclipse workspace, follow the 
+wizard to completion.
+
+Convert your project to a "Tern" project by right-clicking on the project folder from within the Eclipse
+Project Explorer and choosing `Configure -> Convert to a Tern Project`.
+
+Right click on the project and choose `Properties`, type "Formatting" into properties dialog's search bar, choose 
+"Formatting". Click "Configure workspace settings". Choose "Import", and import the file [JSCS Formatting XML][jscs-xml].
+
+[jscs-xml]: https://raw.githubusercontent.com/solnetdigital/standards-and-tooling/master/javascript/config/jscs.xml
 
 **IntelliJ**
 
@@ -61,7 +72,7 @@ SublimeJSCSFormatter should be used to automatically format JavaScript code usin
 This plugin can be installed via Package Control using the search term "JSCS Formatter".
 
 The default configuration must be changed to ensure code is formatted on save.
-Modify the settings within the Preferences -> Package Settings -> JSCS Formatter -> Settings - User file,
+Modify the settings within the `Preferences -> Package Settings -> JSCS Formatter -> Settings - User file`,
 adding the following object to the root preferences JSON:
 
 ```JSON
@@ -115,3 +126,4 @@ Note that you may have to add linting user preferences in order to begin using l
 [syntastic]: https://github.com/scrooloose/syntastic
 [sublime-linter-documentation]: https://sublimelinter.readthedocs.org/en/latest/installation.html#installing-via-pc
 [jscs-config]: https://github.com/solnetdigital/standards-and-tooling/blob/master/javascript/config/jscs.json
+[tern-js-plugin]: https://github.com/angelozerr/tern.java/blob/master/README.md
