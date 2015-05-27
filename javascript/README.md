@@ -2,7 +2,10 @@
 
  - [Style Guide](#style-guide)
  - [Automatic Formatting](#automatic-formatting)
+  - [Editor Plugins](#editor-plugins) *[vim](, eclipse, intellij*
+
  - [Linting](#linting)
+  - [Editor Plugins](#editor-plugins-1)
 
 ## Style Guide
 
@@ -34,7 +37,7 @@ If it isn't present already, add a [jscsrc][jscs-config] file at the root of you
 
 ### Editor Plugins
 
-**Vim**
+##### Vim
 
 Use [Chiel92/vim-autoformat][vim-autoformat]. NeoBundle is the recommended Vim package manager.
 
