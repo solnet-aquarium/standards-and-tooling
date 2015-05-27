@@ -2,10 +2,10 @@
 
  - [Style Guide](#style-guide)
  - [Automatic Formatting](#automatic-formatting)
-  - [Editor Plugins](#editor-plugins) *[Vim](#vim), [Eclipse](#eclipse), [Intellij](#intellij), [Sublime Text 3](#sublime-text-3)*
+  - [Editor Plugins](#editor-plugins): *[Vim](#vim), [Eclipse](#eclipse), [Intellij](#intellij), [Sublime Text 3](#sublime-text-3)*
 
  - [Linting](#linting)
-  - [Editor Plugins](#editor-plugins-1) *[Vim](#vim-1), [Eclipse](#eclipse-1), [Intellij](#intellij-1), [Sublime Text 3](#sublime-text-3-1)*
+  - [Editor Plugins](#editor-plugins-1): *[Vim](#vim-1), [Eclipse](#eclipse-1), [Intellij](#intellij-1), [Sublime Text 3](#sublime-text-3-1)*
 
 ## Style Guide
 
