@@ -114,7 +114,7 @@ JSCS must be used to lint JS files on save. Installation:
 
 If it isn't present already, add a [jscsrc][jscs-config] file at the root of your project, with the filename `.jscsrc`.
 
-**Toggling Rules**
+##### Toggling Rules
 
 In legacy projects, where refactoring could have unknown side effects or be otherwise impossible, use of inline flags is allowed.
 
