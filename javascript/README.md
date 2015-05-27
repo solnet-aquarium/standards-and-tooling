@@ -110,6 +110,21 @@ JSCS must be used to lint JS files on save. Installation:
 
 If it isn't present already, add a [jscsrc][jscs-config] file at the root of your project, with the filename `.jscsrc`.
 
+**Toggling Rules**
+
+In legacy projects, where refactoring could have unknown side effects or be otherwise impossible, use of inline flags is allowed.
+
+```JavaScript
+// Code here will be linted with JSCS.
+// jscs:disable specificRule
+// Code here will be ignored by JSCS.
+// jscs:enable specificRule
+```
+
+For a list of rules, see [JSCS Rules][jscs-rules]. Note that this should be used as sparingly as possible and never for an entire file.
+
+[jscs-rules]: http://jscs.info/rules.html
+
 ### Editor Plugins
 
 **Vim: [scrooloose/syntastic][syntastic]**
