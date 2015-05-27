@@ -55,26 +55,29 @@ JSCS formatting is provided through the Tern.js plugin.
 
 *Install Tern JS Plugin*
 
-Drag the "install" button from the [Tern js plugin][tern-js-plugin] page onto your Eclipse workspace, follow the 
+1. Drag the "install" button from the [Tern js plugin][tern-js-plugin] page onto your Eclipse workspace, follow the 
 wizard to completion.
-
-Convert your project to a "Tern" project by right-clicking on the project folder from within the Eclipse
+2. Convert your project to a "Tern" project by right-clicking on the project folder from within the Eclipse
 Project Explorer and choosing `Configure -> Convert to a Tern Project`.
 
 *Enable JSCS Formatting*
 
-Right click on the project and choose `Properties`, type "Formatting" into properties dialog's search bar, choose 
-"Formatting". Click "Configure workspace settings". Choose "Import", and import the file [JSCS Formatting XML][jscs-xml].
+1. Right click on the project and choose `Properties`, type "Formatting" into properties dialog's search bar, choose 
+"Formatting". 
+2. Click "Configure workspace settings". Choose "Import", and import the file [JSCS Formatting XML][jscs-xml].
 
 *Enable JSCS Formatting on Save*
 
-Open Eclipse Preferences. Type "Save" in the preferences dialog's search box. Choose `JavaScript -> Editor -> Save Actions`.
-Enable "Perform the selected actions on save". Enable "Format source code". 
+1. Open Eclipse Preferences. Type "Save" in the preferences dialog's search box. 
+2. Choose `JavaScript -> Editor -> Save Actions`.
+3. Enable "Perform the selected actions on save". Enable "Format source code". 
 
 *Strip Whitespace on Save* 
 
-Open Eclipse Preferences. Type "Save" in the preferences dialog's search box. Choose `JavaScript -> Editor -> Save Actions`.
-Enable "Additional actions". Click "Configure". Click "Code organizing". Enable "Remove trailing whitespace".
+1. Open Eclipse Preferences. Type "Save" in the preferences dialog's search box. 
+2. Choose `JavaScript -> Editor -> Save Actions`.
+3. Enable "Additional actions". Click "Configure". 
+4. Click "Code organizing". Enable "Remove trailing whitespace".
 
 [jscs-xml]: https://raw.githubusercontent.com/solnetdigital/standards-and-tooling/master/javascript/config/jscs.xml
 
