@@ -148,7 +148,9 @@ NeoBundleLazy 'scrooloose/syntastic', { 'autoload': { 'filetypes': ['javascript'
 
 ##### IntelliJ
 
-**TODO**
+Webstorm comes with JSCS linting support out of the box. Follow the [Webstorm IDE JSCS guide][webstorm-jscs] to set it up.
+
+[webstorm-jscs]: https://www.jetbrains.com/webstorm/help/using-javascript-code-quality-tools.html#d204469e452
 
 ##### Sublime Text 3
 
