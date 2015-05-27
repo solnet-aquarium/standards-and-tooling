@@ -80,7 +80,28 @@ Enable "Additional actions". Click "Configure". Click "Code organizing". Enable 
 
 ##### IntelliJ
 
-**TODO**
+Use the [jscs][jscs-webstorm] plugin.
+
+*Installation*
+
+1. Download the [jscs][jscs-webstorm] plugin
+2. `File > Settings`, choose `Plugins`
+3. Click `Install plugin from disk...`, select the zip file you downloaded
+4. Restart IDE
+5. `File > Settings`, search "node". Click `Node.js and NPM`. Ensure node.js is installed.
+6. Click `+`, install jscs
+7. In the settings sidebar, click `JSCS`
+8. Ensure `enable` is checked
+9. Set the JSCS package path to your project's `node_modules/jscs` directory
+10. Select "Configuration file", set it to the `.jscsrc` file in your project
+
+*Autoformat on Save*
+
+Import the [autoformat on save][jscs-webstorm-autoformat-on-save] macro, or [create one yourself][jscs-webstorm-create-format-macro].
+
+[jscs-webstorm]: https://plugins.jetbrains.com/plugin/7554?pr=phpStorm
+[jscs-webstorm-autoformat-on-save]: https://github.com/solnetdigital/standards-and-tooling/raw/master/javascript/config/webstorm-save-and-format-macro-keymap.jar
+[jscs-webstorm-create-format-macro]: http://stackoverflow.com/a/26001409/187954
 
 ##### Sublime Text 3
 
