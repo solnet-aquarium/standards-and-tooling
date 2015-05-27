@@ -128,12 +128,15 @@ For a list of rules, see [JSCS Rules][jscs-rules]. Note that this should be used
 
 ### Editor Plugins
 
-**Vim: [scrooloose/syntastic][syntastic]**
+**Vim**
 
-Add this to your `.vimrc`
+Use [scrooloose/syntastic][syntastic]. NeoBundle is the recommended Vim package manager.
+
+Add this to your .vimrc
 
 ```VimL
-let g:syntastic_javascript_checkers=['jscs']
+NeoBundleLazy 'scrooloose/syntastic', { 'autoload': { 'filetypes': ['javascript'] } }
+  let g:syntastic_javascript_checkers=['jscs']
 ```
 
 **Eclipse**
