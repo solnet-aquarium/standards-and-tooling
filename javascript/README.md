@@ -2,10 +2,10 @@
 
  - [Style Guide](#style-guide)
  - [Automatic Formatting](#automatic-formatting)
-  - [Editor Plugins](#editor-plugins) *[vim](, eclipse, intellij*
+  - [Editor Plugins](#editor-plugins) *[Vim](#vim), [Eclipse](#eclipse), [Intellij](#intellij), [Sublime Text 3](#sublime-text-3)*
 
  - [Linting](#linting)
-  - [Editor Plugins](#editor-plugins-1)
+  - [Editor Plugins](#editor-plugins-1) *[Vim](#vim-1), [Eclipse](#eclipse-1), [Intellij](#intellij-1), [Sublime Text 3](#sublime-text-3-1)*
 
 ## Style Guide
 
@@ -49,7 +49,7 @@ NeoBundleLazy 'Chiel92/vim-autoformat', { 'autoload': { 'filetypes': ['javascrip
   autocmd BufWritePre,FileWritePre *.js silent! :Autoformat<CR>
 ```
 
-**Eclipse**
+##### Eclipse
 
 JSCS formatting is provided through the Tern.js plugin. 
 
@@ -78,11 +78,11 @@ Enable "Additional actions". Click "Configure". Click "Code organizing". Enable 
 
 [jscs-xml]: https://raw.githubusercontent.com/solnetdigital/standards-and-tooling/master/javascript/config/jscs.xml
 
-**IntelliJ**
+##### IntelliJ
 
 **TODO**
 
-**Sublime Text 3**
+##### Sublime Text 3
 
 SublimeJSCSFormatter should be used to automatically format JavaScript code using JSCS.
 
@@ -131,7 +131,7 @@ For a list of rules, see [JSCS Rules][jscs-rules]. Note that this should be used
 
 ### Editor Plugins
 
-**Vim**
+##### Vim
 
 Use [scrooloose/syntastic][syntastic]. NeoBundle is the recommended Vim package manager.
 
@@ -142,15 +142,15 @@ NeoBundleLazy 'scrooloose/syntastic', { 'autoload': { 'filetypes': ['javascript'
   let g:syntastic_javascript_checkers=['jscs']
 ```
 
-**Eclipse**
+##### Eclipse
 
 **TODO**
 
-**IntelliJ**
+##### IntelliJ
 
 **TODO**
 
-**Sublime Text 3**
+##### Sublime Text 3
 
 First you will need to install SublimeLinter using Package Control. Use the
 [SublimeLinter documentation][sublime-linter-documentation] to do this.
