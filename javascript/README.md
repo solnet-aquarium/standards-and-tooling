@@ -95,10 +95,11 @@ adding the following object to the root preferences JSON:
 }
 ```
 
-See the [SublimeJSCSFormatter][sublime-jscs-formatter] documetation for further instructions.
+See the [SublimeJSCSFormatter][sublime-jscs-formatter] documentation for further instructions.
 
 [vim-autoformat]: https://github.com/Chiel92/vim-autoformat
 [sublime-text-3-jscs]: https://packagecontrol.io/packages/SublimeLinter-jscs
+[sublime-jscs-formatter]: https://github.com/TheSavior/SublimeJSCSFormatter
 
 - - -
 
