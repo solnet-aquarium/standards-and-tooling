@@ -6,6 +6,7 @@
 
  - [Linting](#linting)
   - Editor Plugins: *[Vim](#vim-1), [Eclipse](#eclipse-1), [Intellij](#intellij-1), [Sublime Text 3](#sublime-text-3-1)*
+ - [Release Management](#release-management) 
 
 ## Style Guide
 
@@ -189,3 +190,9 @@ Note that you may have to add linting user preferences in order to begin using l
 [sublime-linter-documentation]: https://sublimelinter.readthedocs.org/en/latest/installation.html#installing-via-pc
 [jscs-config]: https://github.com/solnetdigital/standards-and-tooling/blob/master/javascript/config/jscs.json
 [tern-js-plugin]: https://github.com/angelozerr/tern.java/blob/master/README.md
+
+## Release Management
+
+[Semantic Release][semantic-release] must be used to manage releases of public or private NPM modules.
+
+[semantic-release]: https://github.com/boennemann/semantic-release  
