@@ -69,11 +69,10 @@ Project Explorer and choosing `Configure -> Convert to a Tern Project`.
 
 *Enable JSCS Formatting on Save*
 
-1. Open Eclipse Preferences. Type "Save" in the preferences dialog's search box. 
-2. Choose `JavaScript -> Editor -> Save Actions`.
-3. Enable "Perform the selected actions on save". Enable "Format source code". 
+Open Eclipse Preferences. Type "Save" in the preferences dialog's search box. Choose `JavaScript -> Editor -> Save Actions`.
+Enable "Perform the selected actions on save". Enable "Format source code".
 
-*Strip Whitespace on Save* 
+*Strip Whitespace on Save*
 
 1. Open Eclipse Preferences. Type "Save" in the preferences dialog's search box. 
 2. Choose `JavaScript -> Editor -> Save Actions`.
