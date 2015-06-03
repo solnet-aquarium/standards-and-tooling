@@ -7,6 +7,7 @@
  - [Linting](#linting)
   - Editor Plugins: *[Vim](#vim-1), [Eclipse](#eclipse-1), [Intellij](#intellij-1), [Sublime Text 3](#sublime-text-3-1)*
  - [Release Management](#release-management) 
+ - [Pre-commit Hooks](#pre-commit-hooks)
 
 ## Style Guide
 
@@ -195,3 +196,26 @@ Note that you may have to add linting user preferences in order to begin using l
 [Semantic Release][semantic-release] must be used to manage releases of public or private NPM modules.
 
 [semantic-release]: https://github.com/boennemann/semantic-release  
+
+## Pre-commit Hooks
+
+Pre commit hooks must be used to ensure only quality code is committed to a project.
+
+Use [husky][husky] to ensure pre-commit hooks are installed when the developer runs `npm install`.
+
+Projects that include a JavaScript component must have at least the following entries in the `package.json`
+
+```JSON
+// package.json
+{
+  ...
+  "scripts": {
+    "precommit": "jscs **/*.js",
+    "prepush": "jscs **/*.js"
+  }
+  ...
+}
+```
+This is a minimum requirement. Your project lead may choose to extract these tasks into separate runners and simply call the runner instead.
+
+[husky]: https://github.com/typicode/husky
