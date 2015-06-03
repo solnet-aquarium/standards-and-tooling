@@ -208,12 +208,12 @@ Projects that include a JavaScript component must have at least the following en
 ```JSON
 // package.json
 {
-  ...
+  // ...
   "scripts": {
     "precommit": "jscs **/*.js",
     "prepush": "jscs **/*.js"
   }
-  ...
+  // ...
 }
 ```
 This is a minimum requirement. Your project lead may choose to extract these tasks into separate runners and simply call the runner instead.
