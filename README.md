@@ -11,6 +11,8 @@ This repository represents the company-wide standards & tooling per language. It
 
 ## Contributions
 
+Contributions are accepted via pull requests.
+
 When working on a language in this repository, note that the following sections are mandatory and should retain the same order as below:
 
 ### Style guide 
