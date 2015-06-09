@@ -18,7 +18,11 @@
     },
     "validateIndentation": 2,
     "validateQuoteMarks": "'",
-
+    "validateAlignedFunctionParameters": {
+       "lineBreakAfterOpeningBraces": true,
+       "lineBreakBeforeClosingBraces": true
+    },
+    "validateParameterSeparator": ", "
     "disallowMultipleLineStrings": true,
     "disallowMixedSpacesAndTabs": true,
     "disallowTrailingWhitespace": true,
@@ -53,14 +57,17 @@
     "requireSpacesInFunctionExpression": {
         "beforeOpeningCurlyBrace": true
     },
+    "requireSpaceAfterLineComment": true,
+    "requireSemicolons": true,
     "disallowSpacesInAnonymousFunctionExpression": {
         "beforeOpeningRoundBrace": true
     },
+    "disallowTrailingComma": true,
     "disallowSpacesInsideObjectBrackets": "all",
     "disallowSpacesInsideArrayBrackets": "all",
     "disallowSpacesInsideParentheses": true,
 
     "disallowMultipleLineBreaks": true,
     "disallowNewlineBeforeBlockStatements": true,
-    "requireSemicolons": true
+    "safeContextKeyword": ["self"] 
 }
