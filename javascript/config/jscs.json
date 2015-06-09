@@ -22,7 +22,7 @@
        "lineBreakAfterOpeningBraces": true,
        "lineBreakBeforeClosingBraces": true
     },
-    "validateParameterSeparator": ", "
+    "validateParameterSeparator": ", ",
     "disallowMultipleLineStrings": true,
     "disallowMixedSpacesAndTabs": true,
     "disallowTrailingWhitespace": true,
