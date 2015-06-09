@@ -61,5 +61,6 @@
     "disallowSpacesInsideParentheses": true,
 
     "disallowMultipleLineBreaks": true,
-    "disallowNewlineBeforeBlockStatements": true
+    "disallowNewlineBeforeBlockStatements": true,
+    "requireSemicolons": true
 }
