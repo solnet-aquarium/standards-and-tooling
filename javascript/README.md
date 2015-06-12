@@ -133,26 +133,26 @@ See the [SublimeJSCSFormatter][sublime-jscs-formatter] documentation for further
 
 ## Linting
 
-JSCS must be used to lint JS files on save. Installation:
+ESLint must be used to lint JS files on save. Installation:
 
-`npm install -g jscs`
+`npm install -g eslint`
 
-If it isn't present already, add a [jscsrc][jscs-config] file at the root of your project, with the filename `.jscsrc`.
+If it isn't present already, add a [eslintrc][eslint-config] file at the root of your project, with the filename `.eslintrc`.
 
 ##### Toggling Rules
 
 In legacy projects, where refactoring could have unknown side effects or be otherwise impossible, use of inline flags is allowed.
 
 ```JavaScript
-// Code here will be linted with JSCS.
-// jscs:disable specificRule
-// Code here will be ignored by JSCS.
-// jscs:enable specificRule
+// Code here will be linted with ESLint.
+/*eslint-disable no-alert, no-console */
+// Code here will be ignored by ESLint.
+/*eslint-enable no-alert no-console */
 ```
 
-For a list of rules, see [JSCS Rules][jscs-rules]. Note that this should be used as sparingly as possible and never for an entire file.
+For a list of rules, see [ESLint Rules][eslint-rules]. Note that this should be used as sparingly as possible and never for an entire file.
 
-[jscs-rules]: http://jscs.info/rules.html
+[eslint-rules]: http://eslint.org/docs/user-guide/configuring.html#configuring-rules
 
 ### Editor Plugins
 
@@ -164,7 +164,7 @@ Add this to your .vimrc
 
 ```VimL
 NeoBundleLazy 'scrooloose/syntastic', { 'autoload': { 'filetypes': ['javascript'] } }
-  let g:syntastic_javascript_checkers=['jscs']
+  let g:syntastic_javascript_checkers=['eslint']
 ```
 
 ##### Eclipse
@@ -173,22 +173,22 @@ NeoBundleLazy 'scrooloose/syntastic', { 'autoload': { 'filetypes': ['javascript'
 
 ##### IntelliJ
 
-Webstorm comes with JSCS linting support out of the box. Follow the [Webstorm IDE JSCS guide][webstorm-jscs] to set it up.
+Webstorm comes with ESLint linting support out of the box. Follow the [Webstorm IDE ESLint guide][webstorm-eslint] to set it up.
 
-[webstorm-jscs]: https://www.jetbrains.com/webstorm/help/using-javascript-code-quality-tools.html#d204469e452
+[webstorm-eslint]: https://www.jetbrains.com/webstorm/help/using-javascript-code-quality-tools.html#d204469e452
 
 ##### Sublime Text 3
 
 First you will need to install SublimeLinter using Package Control. Use the
 [SublimeLinter documentation][sublime-linter-documentation] to do this.
 
-Search for the package SublimeLinter-jscs in Package Control and install it.
+Search for the package SublimeLinter-eslint in Package Control and install it.
 
 Note that you may have to add linting user preferences in order to begin using linting if you haven't already.
 
 [syntastic]: https://github.com/scrooloose/syntastic
 [sublime-linter-documentation]: https://sublimelinter.readthedocs.org/en/latest/installation.html#installing-via-pc
-[jscs-config]: https://github.com/solnetdigital/standards-and-tooling/blob/master/javascript/config/jscs.json
+[eslint-config]: https://github.com/solnetdigital/standards-and-tooling/blob/master/javascript/config/eslint.json
 [tern-js-plugin]: https://github.com/angelozerr/tern.java/blob/master/README.md
 
 ## Release Management
@@ -209,8 +209,8 @@ Projects that include a JavaScript component must have at least the following en
 // package.json
 {
   "scripts": {
-    "precommit": "jscs **/*.js",
-    "prepush": "jscs **/*.js"
+    "precommit": "jscs **/*.js; eslint **/*.js",
+    "prepush": "jscs **/*.js; eslint **/*.js"
   }
 }
 ```
