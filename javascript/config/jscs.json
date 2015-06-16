@@ -69,5 +69,5 @@
 
     "disallowMultipleLineBreaks": true,
     "disallowNewlineBeforeBlockStatements": true,
-    "safeContextKeyword": ["self"] 
+    "safeContextKeyword": ["self", "vm"] 
 }
