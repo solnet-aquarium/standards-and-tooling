@@ -221,7 +221,16 @@ NeoBundleLazy 'scrooloose/syntastic', { 'autoload': { 'filetypes': ['javascript'
 
 ##### Eclipse
 
-**TODO**
+*Enable ESLint Linting*
+
+1. Right click on the project and choose `Properties`, Choose `Tern > Validation > ESLint`. 
+2. Ensure "Enable" is checked.
+3. Check "Use config files", browse and find the `.eslintrc` file in your project
+
+*Enable JSCS Formatting on Save*
+
+Open Eclipse Preferences. Type "Save" in the preferences dialog's search box. Choose `JavaScript -> Editor -> Save Actions`.
+Enable "Perform the selected actions on save". Enable "Format source code".
 
 ##### IntelliJ
 
