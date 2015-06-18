@@ -199,7 +199,7 @@ Note that you may have to add linting user preferences in order to begin using l
 
 ## Pre-commit Hooks
 
-Pre commit hooks must be used to ensure only quality code is committed to a project.
+Pre commit hooks must be used to ensure only quality code is committed to a project. the following hook should be added to all projects, as it will check **only** code that is to be committed, and therefore can help to incrementally fix the JavaScript in a legacy project.
 
 Use [husky][husky] to ensure pre-commit hooks are installed when the developer runs `npm install`.
 
@@ -208,12 +208,45 @@ Projects that include a JavaScript component must have at least the following en
 ```JSON
 // package.json
 {
+  "devDependencies": {
+    "eslint": "^0.22.1",
+    "git-guppy": "^1.0.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^0.14.0",
+    "gulp-filter": "^2.0.2",
+    "gulp-jscs": "^1.6.0",
+    "husky": "^0.8.0"
+  },
   "scripts": {
-    "precommit": "jscs **/*.js; eslint **/*.js",
-    "prepush": "jscs **/*.js; eslint **/*.js"
+    "precommit": "npm run node_modules/.bin/gulp pre-commit",
+    "prepush": "npm run node_modules/.bin/gulp pre-commit"
   }
 }
 ```
+
+And at least the following content in your `gulpfile.js`
+
+```JS
+'use strict';
+
+var gulp = require('gulp');
+var guppy = require('git-guppy')(gulp);
+var gulpFilter = require('gulp-filter');
+var eslint = require('gulp-eslint');
+var jscs = require('gulp-jscs');
+
+gulp.task('pre-commit', guppy.src('pre-commit', function(filesBeingCommitted) {
+  return gulp.src(filesBeingCommitted)
+    .pipe(gulpFilter(['*.js']))
+    .pipe(jscs({
+      configPath: '.jscsrc'
+    }))
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failOnError());
+}));
+```
+
 This is a minimum requirement. Your project lead may choose to extract these tasks into separate runners and simply call the runner instead.
 
 [husky]: https://github.com/typicode/husky
