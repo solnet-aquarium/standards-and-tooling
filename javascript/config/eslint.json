@@ -28,9 +28,9 @@
       2,
       "allow-null"
     ],
-    "global-strict": [
+    "strict": [
       2,
-      "never"
+      "global"
     ],
     "guard-for-in": 2,
     "new-cap": 2,
