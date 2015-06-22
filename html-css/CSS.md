@@ -1,10 +1,16 @@
 # CSS
 
+For the purposes of this document, unless otherwise indicated "CSS" means CSS, SASS, SCSS and LESS.
+
  - [Style Guide](#style-guide)
  - [Automatic Formatting](#automatic-formatting)
  - [Linting](#linting)
 
 ## Style Guide
+
+BEM
+
+Format of rules inside selectors will be enforced by the use of CSSComb.
 
 ### Required Reading
 
@@ -16,7 +22,7 @@
 
 ## Automatic Formatting
 
-[CSSComb](css-comb) shall be used to automatically format CSS code.
+[CSSComb](css-comb) must be used to automatically format CSS code.
 
 [csscomb]: https://github.com/csscomb/csscomb.js
 
