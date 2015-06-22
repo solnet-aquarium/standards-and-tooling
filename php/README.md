@@ -68,7 +68,7 @@ For Silverstripe projects, Silverstripe's own [conventions](http://docs.silverst
 
 **Eclipse**
 
-**TODO**
+http://www.phpsrc.org/projects/pti/wiki/Installation
 
 **IntelliJ**
 
@@ -84,7 +84,7 @@ For Silverstripe projects, Silverstripe's own [conventions](http://docs.silverst
 
 **Eclipse**
 
-**TODO**
+http://www.phpsrc.org/projects/pti/wiki/Installation
 
 **IntelliJ**
 
