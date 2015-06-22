@@ -64,7 +64,7 @@ For Silverstripe projects, Silverstripe's own [conventions](http://docs.silverst
 
 **Vim**
 
-**TODO**
+https://github.com/dericofilho/php.tools
 
 **Eclipse**
 
@@ -72,20 +72,6 @@ http://www.phpsrc.org/projects/pti/wiki/Installation
 
 **IntelliJ**
 
-**TODO**
+https://github.com/dericofilho/php.tools
 
 - - -
-
-## Linting
-
-**Vim**
-
-**TODO**
-
-**Eclipse**
-
-http://www.phpsrc.org/projects/pti/wiki/Installation
-
-**IntelliJ**
-
-**TODO**
