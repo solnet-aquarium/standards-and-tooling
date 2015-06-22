@@ -8,6 +8,8 @@
    - [Declarations](#declarations)
    - [Blocks](#blocks)
    - [File and Folder](#file-and-folder)
+ - [Required Reading](#required-reading)
+ - [Further Optional Reading](#further-optional-reading)
  - [Automatic Formatting](#automatic-formatting)
 
 ## Style Guide
