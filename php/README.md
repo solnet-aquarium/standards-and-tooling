@@ -47,17 +47,16 @@ For Silverstripe projects, Silverstripe's own [conventions](http://docs.silverst
 * JavaScript and CSS should follow the standards defined for both. But generally both files and containing directories SHOULD be hyphen-snake-case.
 
 ### Required Reading
-
-PSR-1: http://www.php-fig.org/psr/psr-1/
-PSR-2: http://www.php-fig.org/psr/psr-2/
-Silverstripe Conventions: http://docs.silverstripe.org/en/3.0/misc/coding-conventions/
-Silverstripe Directory Structure: http://docs.silverstripe.org/en/3.1/getting_started/directory_structure/
+* PSR-1: http://www.php-fig.org/psr/psr-1/
+* PSR-2: http://www.php-fig.org/psr/psr-2/
+* Silverstripe Conventions: http://docs.silverstripe.org/en/3.0/misc/coding-conventions/
+* Silverstripe Directory Structure: http://docs.silverstripe.org/en/3.1/getting_started/directory_structure/
 
 ### Further Optional Reading
-PSR-0: http://www.php-fig.org/psr/psr-0/
-PSR-3: http://www.php-fig.org/psr/psr-3/
-PSR-4: http://www.php-fig.org/psr/psr-4/
-PSR-7: http://www.php-fig.org/psr/psr-7/
+* PSR-0: http://www.php-fig.org/psr/psr-0/
+* PSR-3: http://www.php-fig.org/psr/psr-3/
+* PSR-4: http://www.php-fig.org/psr/psr-4/
+* PSR-7: http://www.php-fig.org/psr/psr-7/
 
 ## Automatic Formatting
 
