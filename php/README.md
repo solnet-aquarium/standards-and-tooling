@@ -3,6 +3,11 @@
  - [Style Guide](#style-guide)
  - [Overview](#overview)
    - [Formatting](#formatting)
+   - [Global](#global)
+   - [Naming](#naming)
+   - [Declarations](#declarations)
+   - [Blocks](#blocks)
+   - [File and Folder](#file-and-folder)
  - [Automatic Formatting](#automatic-formatting)
 
 ## Style Guide
