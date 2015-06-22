@@ -1,6 +1,8 @@
 # PHP
 
  - [Style Guide](#style-guide)
+ - [Overview](#overview)
+ - - [Formatting](#formatting)
  - [Automatic Formatting](#automatic-formatting)
 
 ## Style Guide
