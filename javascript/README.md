@@ -37,6 +37,21 @@ JSCS must be used to format JS files on save. Installation:
 If it isn't present already, add a [jscsrc][jscs-config] file at the root of your project, with the filename 
 `.jscsrc`.
 
+##### Toggling Rules
+
+In legacy projects, where refactoring could have unknown side effects or be otherwise impossible, use of inline flags is allowed.
+
+```JavaScript
+// Code here will be linted with JSCS.
+/*jscs:disable requireCamelCaseOrUpperCaseIdentifiers */
+// Code here will be ignored by JSCS.
+/*jscs:enable requireCamelCaseOrUpperCaseIdentifiers */
+```
+
+For a list of rules, see [JSCS Rules][eslint-rules]. Note that this should be used as sparingly as possible and never for an entire file.
+
+[jscs-rules]: http://jscs.info/rules.html
+
 ### Editor Plugins
 
 ##### Vim
@@ -148,6 +163,11 @@ In legacy projects, where refactoring could have unknown side effects or be othe
 /*eslint-disable no-alert, no-console */
 // Code here will be ignored by ESLint.
 /*eslint-enable no-alert no-console */
+
+// OR
+
+// Use the following to disable ESLint for a single line
+// eslint-disable-line no-console
 ```
 
 For a list of rules, see [ESLint Rules][eslint-rules]. Note that this should be used as sparingly as possible and never for an entire file.
