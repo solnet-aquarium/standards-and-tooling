@@ -2,7 +2,6 @@
 
  - [Style Guide](#style-guide)
  - [Automatic Formatting](#automatic-formatting)
- - [Linting](#linting)
 
 ## Style Guide
 
@@ -73,5 +72,3 @@ http://www.phpsrc.org/projects/pti/wiki/Installation
 **IntelliJ**
 
 https://github.com/dericofilho/php.tools
-
-- - -
