@@ -12,6 +12,10 @@ For Silverstripe projects, Silverstripe's own [conventions](http://docs.silverst
 
 ### Overview
 
+#### Formatting
+* Code MUST use 4 spaces for indenting, not tabs.
+* Do NOT edit code in the immediate vicinity of your working area for the sake of formatting. Maintaining commit history is takes precidence.
+
 #### Global
 * No shorthand PHP opening tags (<?)
 * No closing PHP tag in any PHP file
@@ -24,10 +28,15 @@ For Silverstripe projects, Silverstripe's own [conventions](http://docs.silverst
 * Static properties MUST be declared as $lower_case with underscores separating words
 * All other properties MUST be declared as $lowerCamelCase
 
+#### Declarations
+* Visibility MUST be declared on all properties and methods
+* abstract and final MUST be declared before the visibility
+* static MUST be declared after the visibility.
+
 #### Blocks
 * Opening braces for classes MUST go on the next line, and closing braces MUST go on the next line after the body.
 * Opening braces for methods MUST go on the next line, and closing braces MUST go on the next line after the body.
-* All blocks must have an opening and closing brace. No shorthand conditionals or loops
+* All blocks MUST have an opening and closing brace. The exception to this rule is ternary conditionals that appear on one line.
 
 #### File and Folder
 * All directories containing primary PHP buisiness logic or Parsable Silverstripe template files (e.g. /mysite/code/MyFeature/ and modules) MUST be UpperCamelCase
