@@ -13,25 +13,29 @@ For Silverstripe projects, Silverstripe's own [conventions](http://docs.silverst
 ### Overview
 
 #### Global
-* No shorthand PHP tags (<?)
+* No shorthand PHP opening tags (<?)
 * No closing PHP tag in any PHP file
-* Namespacing is optional
-* 
+* Namespacing is optional (but encouraged for new projects)
 
 #### Naming
-* Class names must be declared StudlyCaps
-* All constants must be declared UPPER_CASE with underscores separating words
-* Method names must be declared lowerCamelCaps()
-* Static properties must be declared as $lower_case with underscores separating words
-* All other properties must be declared as $lowerCamelCaps
+* Class names MUST be declared UpperCamelCase
+* All constants MUST be declared UPPER_CASE with underscores separating words
+* Method names MUST be declared lowerCamelCase()
+* Static properties MUST be declared as $lower_case with underscores separating words
+* All other properties MUST be declared as $lowerCamelCase
 
 #### Blocks
-* Opening braces are at the end of the line opening the block. Not on a new line.
+* Opening braces for classes MUST go on the next line, and closing braces MUST go on the next line after the body.
+* Opening braces for methods MUST go on the next line, and closing braces MUST go on the next line after the body.
 * All blocks must have an opening and closing brace. No shorthand conditionals or loops
 
 #### File and Folder
-* All Silverstripe projects to follow Silverstripe module structure
-* File names are to be StudlyCaps as per their containing PHP classes.
+* All directories containing primary PHP buisiness logic or Parsable Silverstripe template files (e.g. /mysite/code/MyFeature/ and modules) MUST be UpperCamelCase
+* All directories that may be referenced directly in a URL MUST be alllowercase. (e.g. /themes/mytheme/css/)
+* All Silverstripe modules MUST follow [Silverstripe module structure](http://docs.silverstripe.org/en/2.4/topics/directory-structure/)
+* PHP file names are to be UpperCamelCase as per their containing PHP classes.
+* Silverstripe template files MUST be UpperCamelCase. The exception being sub-action extension templates which can be UpperCamelCase_lowercase.
+* JavaScript and CSS should follow the standards defined for both. But generally both files and containing directories SHOULD be hyphen-snake-case.
 
 ### Required Reading
 
