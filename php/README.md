@@ -8,7 +8,7 @@
 
 Solnet follows the [PSR](http://www.php-fig.org/psr/) group of standards for PHP. In regard to coding standards, this is largely covered by [PSR-1](http://www.php-fig.org/psr/psr-1/) and [PSR-2](http://www.php-fig.org/psr/psr-2/). Please ensure that you are familiar with at least both of these standards. But familiarizing yourself with the entire accepted [PSR](http://www.php-fig.org/psr/) standard will not hurt.
 
-For Silverstripe projects, Silverstripe's own [conventions](http://docs.silverstripe.org/en/3.0/misc/coding-conventions/) are observed [b]as long as there is no conflict with PSR[/b]. PSR is always the canonical standard for PHP code.
+For Silverstripe projects, Silverstripe's own [conventions](http://docs.silverstripe.org/en/3.0/misc/coding-conventions/) are observed <b>as long as there is no conflict with PSR</b>. PSR is always the canonical standard for PHP code.
 
 ### Overview
 
