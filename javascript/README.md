@@ -148,11 +148,13 @@ See the [SublimeJSCSFormatter][sublime-jscs-formatter] documentation for further
 
 ## Linting
 
-ESLint must be used to lint JS files on save. Installation:
+ESLint & JSCS must be used to lint JS files on save. Installation:
 
-`npm install -g eslint`
+`npm install -g eslint jscs`
 
 If it isn't present already, add a [eslintrc][eslint-config] file at the root of your project, with the filename `.eslintrc`.
+
+Follow the JSCS guide above for details regarding JSCS config.
 
 ##### Toggling Rules
 
@@ -172,6 +174,8 @@ In legacy projects, where refactoring could have unknown side effects or be othe
 
 For a list of rules, see [ESLint Rules][eslint-rules]. Note that this should be used as sparingly as possible and never for an entire file.
 
+Follow the JSCS guide above for details regarding JSCS rule management.
+
 [eslint-rules]: http://eslint.org/docs/user-guide/configuring.html#configuring-rules
 
 ### Editor Plugins
@@ -184,7 +188,7 @@ Add this to your .vimrc
 
 ```VimL
 NeoBundleLazy 'scrooloose/syntastic', { 'autoload': { 'filetypes': ['javascript'] } }
-  let g:syntastic_javascript_checkers=['eslint']
+  let g:syntastic_javascript_checkers=['eslint', 'jscs']
 ```
 
 ##### Eclipse
@@ -203,6 +207,8 @@ First you will need to install SublimeLinter using Package Control. Use the
 [SublimeLinter documentation][sublime-linter-documentation] to do this.
 
 Search for the package SublimeLinter-eslint in Package Control and install it.
+
+Search for the package SublimeLinter-hscs in Package Control and install it.
 
 Note that you may have to add linting user preferences in order to begin using linting if you haven't already.
 
