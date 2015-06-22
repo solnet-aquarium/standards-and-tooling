@@ -13,10 +13,13 @@ For Silverstripe projects, Silverstripe's own [conventions](http://docs.silverst
 
 #### Formatting
 * Code MUST use 4 spaces for indenting, not tabs.
-* Do NOT edit code in the immediate vicinity of your working area for the sake of formatting. Maintaining commit history is takes precidence.
+* All PHP files MUST use the Unix LF (linefeed) line ending.
+* All PHP files MUST end with a single blank line.
+* Do NOT edit code in the immediate vicinity of your working area only for the sake of formatting. Maintaining commit history is more important.
 
 #### Global
 * No shorthand PHP opening tags (<?)
+* No shorthand PHP echo opening tags (<?=)
 * No closing PHP tag in any PHP file
 * Namespacing is optional (but encouraged for new projects)
 
