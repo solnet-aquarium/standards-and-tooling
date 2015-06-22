@@ -75,7 +75,7 @@ For Silverstripe projects, Silverstripe's own [conventions](http://docs.silverst
 
 **Vim**
 
-https://github.com/dericofilho/php.tools
+https://github.com/dericofilho/vim-phpfmt
 
 **Eclipse**
 
@@ -83,4 +83,4 @@ http://www.phpsrc.org/projects/pti/wiki/Installation
 
 **IntelliJ**
 
-https://github.com/dericofilho/php.tools
+https://github.com/dericofilho/php.tools/blob/master/PHPStorm.md
