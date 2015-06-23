@@ -51,7 +51,7 @@ For Silverstripe projects, [Silverstripe's own conventions](http://docs.silverst
 
 #### File and Folder
 * All directories containing primary PHP buisiness logic or Parsable Silverstripe template files (e.g. /mysite/code/MyFeature/ and modules) MUST be UpperCamelCase
-* All directories that may be referenced directly in a URL MUST be alllowercase. (e.g. /themes/mytheme/css/)
+* All directories that may be referenced directly in a URL MUST be alllowercase (all lower case with no word separators). (e.g. /themes/mytheme/css/)
 * All Silverstripe modules MUST follow [Silverstripe module structure](http://docs.silverstripe.org/en/2.4/topics/directory-structure/)
 * PHP file names are to be UpperCamelCase as per their containing PHP classes.
 * Silverstripe template files MUST be UpperCamelCase. The exception being sub-action extension templates which can be UpperCamelCase_lowercase.
