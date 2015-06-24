@@ -17,13 +17,13 @@
 2. Open a Terminal (OS X / Linux) or Command Prompt (Windows) and navigate to your project directory 
 3. Execute the following commands
 
-```Bash
-npm init # Follow the prompt to completion
-npm install --save-dev jscs eslint gulp gulp-eslint gulp-filter gulp-jscs git-guppy husky
-```
-
+    ```Bash
+    npm init # Follow the prompt to completion
+    npm install --save-dev jscs eslint gulp gulp-eslint gulp-filter gulp-jscs git-guppy husky
+    ```
 4. Copy the [JSCS][jscsrc] and [ESLint][eslintrc] configuration files into your project's root directory. They should be named `.jscsrc` and `.eslintrc` respectively
 5. Add the following lines to your `package.json` file, located at the root of your project directory. Note that if a `scripts` property exists already, these lines should be added to it. Otherwise, add the entire `scripts` property as below
+
 ```JSON
   "scripts": {
     "precommit": "npm run node_modules/.bin/gulp pre-commit"
