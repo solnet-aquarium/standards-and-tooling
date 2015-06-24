@@ -31,6 +31,8 @@
     ```
 7. Copy the [Gulpfile][gulpfile] to your project root
 
+The project should now be setup to lint and check the formatting of all JavaScript code committed. 
+
 [nodejs-install]: https://nodejs.org/download/
 [eslintrc]: https://raw.githubusercontent.com/solnetdigital/standards-and-tooling/master/javascript/config/.eslintrc
 [jscsrc]: https://raw.githubusercontent.com/solnetdigital/standards-and-tooling/master/javascript/config/.jscsrc
