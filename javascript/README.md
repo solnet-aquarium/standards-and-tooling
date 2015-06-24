@@ -26,7 +26,7 @@
 
     ```JSON
       "scripts": {
-        "precommit": "npm run node_modules/.bin/gulp pre-commit"
+        "precommit": "node_modules/.bin/gulp pre-commit"
        }
     ```
 7. Copy the [Gulpfile][gulpfile] to your project root
