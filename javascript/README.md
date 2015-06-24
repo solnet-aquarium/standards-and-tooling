@@ -1,5 +1,6 @@
 # JavaScript
-
+ 
+ - [Quick Setup](#quick-setup)
  - [Style Guide](#style-guide)
  - [Automatic Formatting](#automatic-formatting)
   - Editor Plugins: *[Vim](#vim), [Eclipse](#eclipse), [Intellij](#intellij), [Sublime Text 3](#sublime-text-3)*
@@ -8,6 +9,30 @@
   - Editor Plugins: *[Vim](#vim-1), [Eclipse](#eclipse-1), [Intellij](#intellij-1), [Sublime Text 3](#sublime-text-3-1)*
  - [Release Management](#release-management) 
  - [Pre-commit Hooks](#pre-commit-hooks)
+
+## Quick Setup
+
+1. Ensure your local project folder has been setup as a git repository
+2. Ensure [NodeJS is installed][nodejs-install] on your development machine
+2. Open a Terminal (OS X / Linux) or Command Prompt (Windows) and navigate to your project directory 
+3. Execute the following commands
+
+```Bash
+npm init # Follow the prompt to completion
+npm install --save-dev jscs eslint gulp gulp-eslint gulp-filter gulp-jscs git-guppy husky
+```
+
+4. Copy the [JSCS][jscsrc] and [ESLint][eslintrc] configuration files into your project's root directory. They should be named `.jscsrc` and `.eslintrc` respectively
+5. Add the following lines to your `package.json` file, located at the root of your project directory. Note that if a `scripts` property exists already, these lines should be added to it. Otherwise, add the entire `scripts` property as below
+```JSON
+  "scripts": {
+    "precommit": "npm run node_modules/.bin/gulp pre-commit"
+   }
+```
+
+[nodejs-install]: https://nodejs.org/download/
+[eslintrc]: https://raw.githubusercontent.com/solnetdigital/standards-and-tooling/master/javascript/config/.eslintrc
+[jscsrc]: https://raw.githubusercontent.com/solnetdigital/standards-and-tooling/master/javascript/config/.jscsrc
 
 ## Style Guide
 
@@ -229,50 +254,15 @@ Pre commit hooks must be used to ensure only quality code is committed to a proj
 
 Use [husky][husky] to ensure pre-commit hooks are installed when the developer runs `npm install`.
 
-Projects that include a JavaScript component must have at least the following entries in the `package.json`
+Projects that include a JavaScript component must have at least the following modules installed (paste the command in a terminal / command prompt from the project root directory to install them):
 
-```JSON
-// package.json
-{
-  "devDependencies": {
-    "eslint": "^0.22.1",
-    "git-guppy": "^1.0.0",
-    "gulp": "^3.9.0",
-    "gulp-eslint": "^0.14.0",
-    "gulp-filter": "^2.0.2",
-    "gulp-jscs": "^1.6.0",
-    "husky": "^0.8.0"
-  },
-  "scripts": {
-    "precommit": "npm run node_modules/.bin/gulp pre-commit",
-    "prepush": "npm run node_modules/.bin/gulp pre-commit"
-  }
-}
+```
+npm install --save-dev eslint jscs gulp gulp-eslint gulp-jscs gulp-filter husky git-guppy
 ```
 
-And at least the following content in your `gulpfile.js`
-
-```JS
-'use strict';
-
-var gulp = require('gulp');
-var guppy = require('git-guppy')(gulp);
-var gulpFilter = require('gulp-filter');
-var eslint = require('gulp-eslint');
-var jscs = require('gulp-jscs');
-
-gulp.task('pre-commit', guppy.src('pre-commit', function(filesBeingCommitted) {
-  return gulp.src(filesBeingCommitted)
-    .pipe(gulpFilter(['*.js']))
-    .pipe(jscs({
-      configPath: '.jscsrc'
-    }))
-    .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(eslint.failOnError());
-}));
-```
+And include a gulpfile that has at least the `pre-commit` step and associated require statements found in this [gulpfile][gulpfile].
 
 This is a minimum requirement. Your project lead may choose to extract these tasks into separate runners and simply call the runner instead.
 
 [husky]: https://github.com/typicode/husky
+[gulpfile]: https://raw.githubusercontent.com/solnetdigital/standards-and-tooling/master/javascript/scripts/gulpfile.js
