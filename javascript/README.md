@@ -14,21 +14,22 @@
 
 1. Ensure your local project folder has been setup as a git repository
 2. Ensure [NodeJS is installed][nodejs-install] on your development machine
-2. Open a Terminal (OS X / Linux) or Command Prompt (Windows) and navigate to your project directory 
-3. Execute the following commands
+3. Open a Terminal (OS X / Linux) or Command Prompt (Windows) and navigate to your project directory 
+4. Execute the following commands
 
     ```Bash
     npm init # Follow the prompt to completion
     npm install --save-dev jscs eslint gulp gulp-eslint gulp-filter gulp-jscs git-guppy husky
     ```
-4. Copy the [JSCS][jscsrc] and [ESLint][eslintrc] configuration files into your project's root directory. They should be named `.jscsrc` and `.eslintrc` respectively
-5. Add the following lines to your `package.json` file, located at the root of your project directory. Note that if a `scripts` property exists already, the `precommit` line should be added to it. Otherwise, add the entire `scripts` property as below. Note that this file *must* be valid JSON, else nothing will work.
+5. Copy the [JSCS][jscsrc] and [ESLint][eslintrc] configuration files into your project's root directory. They should be named `.jscsrc` and `.eslintrc` respectively
+6. Add the following lines to your `package.json` file, located at the root of your project directory. Note that if a `scripts` property exists already, the `precommit` line should be added to it. Otherwise, add the entire `scripts` property as below. Note that this file *must* be valid JSON, else nothing will work.
 
 ```JSON
   "scripts": {
     "precommit": "npm run node_modules/.bin/gulp pre-commit"
    }
 ```
+7. Copy the [Gulpfile][gulpfile] to your project root
 
 [nodejs-install]: https://nodejs.org/download/
 [eslintrc]: https://raw.githubusercontent.com/solnetdigital/standards-and-tooling/master/javascript/config/.eslintrc
