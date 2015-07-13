@@ -14,7 +14,9 @@ Format of rules inside selectors will be enforced by the use of CSSComb.
 
 ### Required Reading
 
- - [][]
+ - [Modular CSS with SASS and BEM article](sass-bem-article) is a good starter for the concepts
+
+[sass-bem-article]: http://mathayward.com/modular-css-with-sass-and-bem/
 
 []: 
 
