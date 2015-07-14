@@ -87,6 +87,11 @@ Outputs:
 .btn--orange {} 
 .btn--big {}
 ```
+#### Mixin reference
+
+ - Margin helpers: Set margins top, bottom, left right and other combinations as percentages based on variables
+ - Nav arrows: Render an arrow with a given direction, width, height, stroke weight, colour and hover colour
+
 
 - - -
 

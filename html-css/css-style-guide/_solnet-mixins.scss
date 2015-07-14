@@ -1,0 +1,130 @@
+// Typography
+
+
+
+
+
+
+// Set helper margins
+
+$margin-map: (
+'none'        : 0,  
+'xs'          : $margin-xs,
+'sm'          : $margin-sm,
+'md'          : $margin-md,
+'lg'          : $margin-lg
+);
+
+
+
+@mixin set-margin ($selector) {
+    @each $name, $margin-value in $margin-map {
+        .margin-#{$selector}-#{$name} {
+            margin-#{$selector}: $margin-value;
+        }
+    }
+}
+
+@mixin set-multi-margin () {
+    @each $name, $margin-value in $margin-map {
+        .margin-vertical-#{$name} {
+            margin-top: $margin-value;
+            margin-bottom: $margin-value;
+        }
+        .margin-horizontal-#{$name} {
+            margin-left: $margin-value;
+            margin-right: $margin-value;
+        }
+    }
+}
+
+/* This mixin creates an arrow as an inline element. Any spacing or placement will have to be further defined */
+// Example of it's usage: http://codepen.io/solnet-digital/pen/FEgex?editors=110
+
+
+@mixin nav-arrow ($arrow-direction: left, $arrow-width: 6px, $arrow-height: 12px, $arrow-stroke: 1px, $arrow-colour: black, $arrow-mask-colour: white, $arrow-hover: #aaa) {
+  
+  /* set up default selectors for left arrow */
+  $border-transparent1 : border-top;
+  $border-transparent2 : border-bottom;
+  $border-arrow : border-right;
+  $border-arrow-point: border-left;
+  /* if it's another direction, reset the variables */
+  @if $arrow-direction == right {
+      $border-transparent1 : border-top;
+      $border-transparent2 : border-bottom;
+      $border-arrow : border-left;
+      $border-arrow-point: border-right;
+    
+  } @else if $arrow-direction == up {
+      $border-transparent1 : border-left;
+      $border-transparent2 : border-right;
+      $border-arrow : border-bottom;
+      $border-arrow-point: border-top;
+    
+  } @else if $arrow-direction == down {
+      $border-transparent1 : border-left;
+      $border-transparent2 : border-right;
+      $border-arrow : border-top;
+      $border-arrow-point: border-bottom;
+  }
+  
+  /* assign values to selectors depending on arrow orientation */ 
+  @if $arrow-direction == up or $arrow-direction == down {
+    #{$border-transparent1}: $arrow-width solid transparent;
+    #{$border-transparent2}: $arrow-width solid transparent;
+    #{$border-arrow}: $arrow-height solid $arrow-colour;
+    #{$border-arrow-point}: none;
+  } @else {
+    #{$border-transparent1}: $arrow-height solid transparent;
+    #{$border-transparent2}: $arrow-height solid transparent;
+    #{$border-arrow}: $arrow-width solid $arrow-colour;
+    #{$border-arrow-point}: none;
+  }
+  background-color: transparent; /* in case it's used on a button */
+  display: inline-block;
+  padding: 0;
+  width: 0;
+  height: 0; 
+  position: relative;
+  vertical-align: middle;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    @if $arrow-direction == up or $arrow-direction == down {
+      #{$border-transparent1}: $arrow-width solid transparent;
+      #{$border-transparent2}: $arrow-width solid transparent;
+      #{$border-arrow}: $arrow-height solid $arrow-mask-colour;
+    } @else {
+      #{$border-transparent1}: $arrow-height solid transparent;
+      #{$border-transparent2}: $arrow-height solid transparent;
+      #{$border-arrow}: $arrow-width solid $arrow-mask-colour;
+    }
+    position: absolute;
+    
+    @if $arrow-direction == left {
+      left: $arrow-stroke;
+      top: ($arrow-height * -1); /*Invert the value to offset from centre*/
+    } @else if $arrow-direction == right {
+      left: ($arrow-width* -1) - $arrow-stroke;
+      top: ($arrow-height * -1); /*Invert the value to offset from centre*/
+    } @else if $arrow-direction == up {
+      left: ($arrow-width * -1);
+      top: $arrow-stroke; 
+    } @else if $arrow-direction == down {
+      left: ($arrow-width * -1);
+      top: ($arrow-height * -1) - $arrow-stroke; 
+    }
+  }
+  &:hover {
+    @if $arrow-direction == up or $arrow-direction == down {
+      #{$border-arrow}: $arrow-height solid $arrow-hover;  
+    } @else {
+      #{$border-arrow}: $arrow-width solid $arrow-hover;  
+    }
+    cursor: pointer;
+  }
+}
