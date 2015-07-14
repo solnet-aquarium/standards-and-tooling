@@ -26,7 +26,7 @@ Here is an example of the BEM from [BEM 101](bem-101)
 .btn--big {}
 ```
 
-How the above is used in HTML. Note how is it easy to decipher what is being defined and the probable rendering.
+How the above is used in HTML. Note how easy it is to decipher what is being defined and the probable rendering.
 
 ```HTML
 <a class="btn btn--big btn--orange" href="http://css-tricks.com">
@@ -37,7 +37,7 @@ How the above is used in HTML. Note how is it easy to decipher what is being def
 
 A smart part of BEM is that everything is a class and nothing is nested. That makes CSS specificity very flat and low, which is a good idea. It means you won't end up fighting with yourself over specificity.
 
-However, Bootstrap is NOT written with this in mind, or in the BEM syntax. 
+However, Bootstrap is NOT written exactly with this in mind, or in the BEM syntax. 
 
 Format of rules inside selectors will be enforced by the use of [CSSComb](css-comb).
 
@@ -60,6 +60,12 @@ Format of rules inside selectors will be enforced by the use of [CSSComb](css-co
 ### Bootstrap
 
 Add a reference to your SASS variables file into the main import file of Bootstrap. This is a manual tweak to the Bootstrap files, but once done, your variables will overwrite all of the declared Bootstrap ones.  
+
+#### Accessibility
+
+At the time of this writing, Bootstrap has an average accessibility rating. To improve on this, add the [Paypal BS Acessibility plugin](paypal-accessibility-bs)
+
+[paypal-accessibility-bs]: https://github.com/paypal/bootstrap-accessibility-plugin 
 
 
 
