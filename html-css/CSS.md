@@ -12,9 +12,21 @@ For the purposes of this document, unless otherwise indicated "CSS" means CSS, S
 
 The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS.
 
+```CSS
+/* Block component */
+.btn {}
+
+/* Element that depends upon the block */ 
+.btn__price {}
+
+/* Modifier that changes the style of the block */
+.btn--orange {} 
+.btn--big {}
+```
+
 A smart part of BEM is that everything is a class and nothing is nested. That makes CSS specificity very flat and low, which is a good idea. It means you won't end up fighting with yourself over specificity.
 
-However, Bootstrap is NOT written with this in mind. 
+However, Bootstrap is NOT written with this in mind, or in the BEM syntax. 
 
 Format of rules inside selectors will be enforced by the use of [CSSComb](css-comb).
 
