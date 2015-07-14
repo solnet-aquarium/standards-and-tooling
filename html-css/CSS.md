@@ -18,6 +18,10 @@ Format of rules inside selectors will be enforced by the use of CSSComb.
 
 [sass-bem-article]: http://mathayward.com/modular-css-with-sass-and-bem/
 
+ - [Mixing SASS, BEM and Bootstrap hints](sass-bem-bs) 
+
+[sass-bem-bs]: http://andersonorui.com/2014/08/08/bootstrap-sass-bem/
+
 []: 
 
 - - -
