@@ -14,6 +14,10 @@
 
 - - -
 
+## Accessibility
+
+- - -
+
 ## Automatic Formatting
 
 ### Editor Plugins

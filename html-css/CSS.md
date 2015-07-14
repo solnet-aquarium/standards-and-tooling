@@ -67,6 +67,8 @@ At the time of this writing, Bootstrap has an average accessibility rating. To i
 
 [paypal-accessibility-bs]: https://github.com/paypal/bootstrap-accessibility-plugin 
 
+- - -
+
 ### Fix'its & tips
 
  - Working on an older App? Create a link to an external CSS file in your APP. This way designers can update the file and work more dynamically and avoid build requests and time waiting. 
