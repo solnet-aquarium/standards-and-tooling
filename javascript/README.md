@@ -62,7 +62,7 @@ JSCS must be used to format JS files on save. Installation:
 
 `npm install -g jscs`
 
-If it isn't present already, add a [jscsrc][jscs-config] file at the root of your project, with the filename 
+If it isn't present already, add a [JSCS][jscsrc] file at the root of your project, with the filename 
 `.jscsrc`.
 
 ##### Toggling Rules

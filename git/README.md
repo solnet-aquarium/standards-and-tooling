@@ -21,7 +21,11 @@ Git should be used for all projects.
  - Where a commit is related to an artefact that exists in the real world, i.e. a JIRA ticket, the commit should be prefixed with the artefact's identifier, and the title or portion of the title, and an optional clarification:
  
   > JIRA-253 Network restrictions should only be mandatory if wobbles are flobbing around the wibbly
+ - "Begin the commit message with a single short (less than 50 character) line summarizing the change, followed by a blank line and then a more thorough description." -- [Git manual][git-man-commit] (see also [A note about Git commit messages][commit-message-note])
  - Single word or unintelligible commit messages are not acceptable for any reason
+
+[git-man-commit]: http://git-scm.com/docs/git-commit
+[commit-message-note]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 
 ## Git Flow
 
