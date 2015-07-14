@@ -12,6 +12,8 @@ For the purposes of this document, unless otherwise indicated "CSS" means CSS, S
 
 The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS.
 
+Here is an example of the BEM from [BEM 101](bem-101)
+
 ```CSS
 /* Block component */
 .btn {}
@@ -22,6 +24,15 @@ The Block, Element, Modifier methodology (commonly referred to as BEM) is a popu
 /* Modifier that changes the style of the block */
 .btn--orange {} 
 .btn--big {}
+```
+
+How the above is used in HTML. Note how is it easy to decypher what is being defined and the probable rendering.
+
+```HTML
+<a class="btn btn--big btn--orange" href="http://css-tricks.com">
+  <span class="btn__price">$9.99</span>
+  <span class="btn__text">Subscribe</span>
+</a>
 ```
 
 A smart part of BEM is that everything is a class and nothing is nested. That makes CSS specificity very flat and low, which is a good idea. It means you won't end up fighting with yourself over specificity.
