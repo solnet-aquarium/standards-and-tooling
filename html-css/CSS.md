@@ -14,7 +14,7 @@ The Block, Element, Modifier methodology (commonly referred to as BEM) is a popu
 
 A smart part of BEM is that everything is a class and nothing is nested. That makes CSS specificity very flat and low, which is a good idea. It means you won't end up fighting with yourself over specificity.
 
-However, Bootstrap is NOT written with this in mind. But we can use Bootstrap mixins to create our own grids for `article` and `nav` tags.
+However, Bootstrap is NOT written with this in mind. 
 
 Format of rules inside selectors will be enforced by the use of [CSSComb](css-comb).
 
@@ -31,6 +31,12 @@ Format of rules inside selectors will be enforced by the use of [CSSComb](css-co
  - [Mixing SASS, BEM and Bootstrap hints](sass-bem-bs) 
 
 [sass-bem-bs]: http://andersonorui.com/2014/08/08/bootstrap-sass-bem/
+
+- - -
+
+### Bootstrap
+
+Add a reference to your SASS variables file into the main import file of Bootstrap. This is a manual tweak to the Bootstrap files, but once done, your variables will overwrite all of the declared Bootstrap ones.  
 
 
 
