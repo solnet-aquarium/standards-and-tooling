@@ -1,11 +1,52 @@
+// #######################################################
 // Typography
 
+//Set a rem font size with pixel fallback
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
 
 
 
 
+// #######################################################
+// A mixin to create panels in set columns. A working version can be viewed here: http://codepen.io/solnet-digital/pen/NPErgr?editors=110
+// REQUIRES BOOTSTRAP GRIDS !!!!!!!!!!!!!
 
-// Set helper margins
+//function to calculate the size of the columns with gutter taken into account. All widths are percentages.
+@mixin calculateCols($col-value, $screen-size-min, $screen-size-max:4000px ) {
+  $gutterCount : $col-value - 1;
+  $gutterSpace : $gutterCount * $column-gutter;
+  $baseWidth : (100 - $gutterSpace) / $col-value;
+
+  @media (min-width: $screen-size-min) and (max-width: $screen-size-max) { 
+    width: ($baseWidth) * 1%;
+    margin-right: $column-gutter * 1%;
+
+    //Create the row breaks and take margins off last childs of each row
+    @for $i from 1 through $row-count {
+      $col-break-point: $col-value * $i + 1; 
+      &:nth-child(#{$col-break-point}) {
+        clear: left; //the introduction of a clear creates the illusion of a new row. No need to set heights of panels
+      }
+      &:nth-child(#{($col-break-point - 1)}) {
+        margin-right: 0 !important;
+      }
+    }  
+  }   
+}
+
+
+
+
+// #######################################################
+// Set helper margins 
 
 $margin-map: (
 'none'        : 0,  

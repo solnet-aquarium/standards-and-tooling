@@ -93,7 +93,8 @@ Outputs:
 ```
 #### Mixin reference
 
- - **Margin helpers**: Set margins top, bottom, left right and other combinations as percentages based on variables
+ - **Set a rem font size with pixel fallback**
+ - **Margin helpers**: Set margins top, bottom, left, right and other combinations as percentages based on variables
  - **Nav arrows**: Render an arrow with a given direction, width, height, stroke weight, colour and hover colour
 
 

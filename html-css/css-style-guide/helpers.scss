@@ -4,3 +4,21 @@
 @include set-margin('left');
 @include set-margin('right');
 @include set-multi-margin();
+
+
+// Product Panel grid system, instead of flexbox: demo: http://codepen.io/solnet-digital/pen/NPErgr?editors=110
+
+// .product-panel {
+//   height: $product-panel-height;
+//   min-height: $product-panel-min-height;
+//   float: left;
+//   background-color: #ddd;
+//   margin-bottom: 20px;
+// }
+
+// .product-panel {
+//   @include calculateCols($number-of-columns-xs,$screen-start, $screen-xs-max);
+//   @include calculateCols($number-of-columns-sm,$screen-sm-min, $screen-sm-max);
+//   @include calculateCols($number-of-columns-md,$screen-md-min, $screen-md-max);
+//   @include calculateCols($number-of-columns-lg,$screen-lg-min);
+// }
