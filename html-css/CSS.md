@@ -10,7 +10,7 @@ For the purposes of this document, unless otherwise indicated "CSS" means CSS, S
 
 BEM
 
-Format of rules inside selectors will be enforced by the use of CSSComb.
+Format of rules inside selectors will be enforced by the use of [CSSComb](css-comb).
 
 ### Required Reading
 
@@ -18,11 +18,15 @@ Format of rules inside selectors will be enforced by the use of CSSComb.
 
 [sass-bem-article]: http://mathayward.com/modular-css-with-sass-and-bem/
 
+ - [BEM 101](bem-101) on CSS Tricks, which is another 'starter'
+ 
+[bem-101]: https://css-tricks.com/bem-101/
+
  - [Mixing SASS, BEM and Bootstrap hints](sass-bem-bs) 
 
 [sass-bem-bs]: http://andersonorui.com/2014/08/08/bootstrap-sass-bem/
 
-[]: 
+
 
 - - -
 
