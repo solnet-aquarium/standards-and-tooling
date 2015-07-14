@@ -8,11 +8,13 @@ For the purposes of this document, unless otherwise indicated "CSS" means CSS, S
 
 ## Style Guide
 
-BEM
+### BEM
+
+The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS.
 
 Format of rules inside selectors will be enforced by the use of [CSSComb](css-comb).
 
-### Required Reading
+#### Required Reading
 
  - [Modular CSS with SASS and BEM article](sass-bem-article) is a good starter for the concepts
 
