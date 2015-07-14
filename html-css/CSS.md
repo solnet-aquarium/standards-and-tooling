@@ -3,6 +3,7 @@
 For the purposes of this document, unless otherwise indicated "CSS" means CSS, SASS, SCSS and LESS.
 
  - [Style Guide](#style-guide)
+  - [Bootstrap](#bootstrap)
  - [Automatic Formatting](#automatic-formatting)
  - [Linting](#linting)
 
@@ -89,8 +90,8 @@ Outputs:
 ```
 #### Mixin reference
 
- - Margin helpers: Set margins top, bottom, left right and other combinations as percentages based on variables
- - Nav arrows: Render an arrow with a given direction, width, height, stroke weight, colour and hover colour
+ - **Margin helpers**: Set margins top, bottom, left right and other combinations as percentages based on variables
+ - **Nav arrows**: Render an arrow with a given direction, width, height, stroke weight, colour and hover colour
 
 
 - - -
