@@ -57,6 +57,25 @@ Format of rules inside selectors will be enforced by the use of [CSSComb](css-co
 
 - - -
 
+### SASS
+
+The above example of BEM written in SASS
+
+```SASS
+/* Block component */
+.btn {
+
+  /* Element that depends upon the block */ 
+  &__price {}
+
+  /* Modifier that changes the style of the block */
+  &--orange {} 
+  &--big {}
+}
+```
+
+- - -
+
 ### Bootstrap
 
 Add a reference to your SASS variables file into the main import file of Bootstrap. This is a manual tweak to the Bootstrap files, but once done, your variables will overwrite all of the declared Bootstrap ones.  
