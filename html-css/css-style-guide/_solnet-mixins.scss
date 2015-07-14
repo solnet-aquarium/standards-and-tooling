@@ -45,6 +45,32 @@
 // }
 
 
+// Style placeholder text
+@mixin placeholder-text($selectorName,$colour) {
+  #{$selectorName}::-webkit-input-placeholder {
+     color: $colour;
+  }
+
+  #{$selectorName}:-moz-placeholder { /* Firefox 18- */
+     color: $colour; 
+     opacity:  1;
+  }
+
+  #{$selectorName}::-moz-placeholder {  /* Firefox 19+ */
+     color: $colour;  
+     opacity:  1;
+  }
+
+  #{$selectorName}:-ms-input-placeholder {  
+     color: $colour;  
+  }
+}
+
+//useage:
+// @include placeholder-text("input", #888);
+// }
+
+
 // #######################################################
 
 // Transitions
@@ -113,7 +139,7 @@ $margin-map: (
     }
 }
 
-@mixin set-multi-margin () {
+@mixin set-multi-margins () {
     @each $name, $margin-value in $margin-map {
         .margin-vertical-#{$name} {
             margin-top: $margin-value;

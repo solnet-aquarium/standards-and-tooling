@@ -3,7 +3,7 @@
 @include set-margin('bottom');
 @include set-margin('left');
 @include set-margin('right');
-@include set-multi-margin();
+@include set-multi-margins();
 
 
 // Product Panel grid system, instead of flexbox: demo: http://codepen.io/solnet-digital/pen/NPErgr?editors=110
