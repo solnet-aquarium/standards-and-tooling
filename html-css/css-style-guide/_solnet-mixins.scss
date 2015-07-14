@@ -16,6 +16,53 @@
 
 
 // #######################################################
+// Style elements
+// 
+
+
+//Cross browser opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// Visually hide an element
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+//useage:
+//.visually-hidden {
+//   @extend %visuallyhidden;
+// }
+
+
+// #######################################################
+
+// Transitions
+// 
+
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+
+
+// #######################################################
 // A mixin to create panels in set columns. A working version can be viewed here: http://codepen.io/solnet-digital/pen/NPErgr?editors=110
 // REQUIRES BOOTSTRAP GRIDS !!!!!!!!!!!!!
 
@@ -79,6 +126,9 @@ $margin-map: (
     }
 }
 
+
+
+// #######################################################
 /* This mixin creates an arrow as an inline element. Any spacing or placement will have to be further defined */
 // Example of it's usage: http://codepen.io/solnet-digital/pen/FEgex?editors=110
 

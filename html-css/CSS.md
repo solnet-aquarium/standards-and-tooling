@@ -100,9 +100,12 @@ Outputs:
 .btn--orange {} 
 .btn--big {}
 ```
-#### Mixin reference
+#### Mixins - A list of whats in it
 
  - **Set a rem font size with pixel fallback**
+ - **Cross browser opacity**: This mixin ensures cross browser opacity all the way down to Internet Explorer 5.
+ - **Visually hide an element**: When you hide an element with display: none, that prevents screen readers from reading it to the user. Sometimes that’s fine, but in other cases this will make the site hard to use for people with screen readers.
+ - **Transitions**: For all browsers, accepting any arguments
  - **Margin helpers**: Set margins top, bottom, left, right and other combinations as percentages based on variables
  - **Nav arrows**: Render an arrow with a given direction, width, height, stroke weight, colour and hover colour
 
