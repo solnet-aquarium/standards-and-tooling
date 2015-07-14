@@ -14,9 +14,11 @@ For the purposes of this document, unless otherwise indicated "CSS" means CSS, S
 
 ### BEM
 
-The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS.
+[bem-site]: http://getbem.com/
 
-Here is an example of the BEM from [BEM 101](bem-101)
+The **Block**, **Element**, **Modifier** methodology (commonly referred to as [BEM](bem-site)) is a popular naming convention for classes in HTML and CSS.
+
+Here is an example of the [BEM](bem-site) from [BEM 101](bem-101)
 
 ```CSS
 /* Block component */
@@ -47,6 +49,8 @@ Format of rules inside selectors will be enforced by the use of [CSSComb](css-co
 
 #### Required Reading
 
+ - [Main BEM site](bem-site)
+ 
  - [Modular CSS with SASS and BEM article](sass-bem-article) is a good starter for the concepts
 
 [sass-bem-article]: http://mathayward.com/modular-css-with-sass-and-bem/
