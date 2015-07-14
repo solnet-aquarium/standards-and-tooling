@@ -26,7 +26,7 @@ Here is an example of the BEM from [BEM 101](bem-101)
 .btn--big {}
 ```
 
-How the above is used in HTML. Note how is it easy to decypher what is being defined and the probable rendering.
+How the above is used in HTML. Note how is it easy to decipher what is being defined and the probable rendering.
 
 ```HTML
 <a class="btn btn--big btn--orange" href="http://css-tricks.com">
