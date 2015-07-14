@@ -3,7 +3,10 @@
 For the purposes of this document, unless otherwise indicated "CSS" means CSS, SASS, SCSS and LESS.
 
  - [Style Guide](#style-guide)
+  - [BEM](#bem)
+  - [SASS](#sass)
   - [Bootstrap](#bootstrap)
+  - [Fix'its & tips](#fixits--tips)
  - [Automatic Formatting](#automatic-formatting)
  - [Linting](#linting)
 
