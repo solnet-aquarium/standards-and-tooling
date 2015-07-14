@@ -94,7 +94,7 @@ Outputs:
 .btn {}
 
 /* Element that depends upon the block */ 
-.btn__price {}
+.btn- {}
 
 /* Modifier that changes the style of the block */
 .btn--orange {} 
