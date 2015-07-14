@@ -74,6 +74,20 @@ The above example of BEM written in SASS
 }
 ```
 
+Outputs:
+
+```CSS
+/* Block component */
+.btn {}
+
+/* Element that depends upon the block */ 
+.btn__price {}
+
+/* Modifier that changes the style of the block */
+.btn--orange {} 
+.btn--big {}
+```
+
 - - -
 
 ### Bootstrap
