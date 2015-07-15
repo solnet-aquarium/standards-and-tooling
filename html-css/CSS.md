@@ -70,7 +70,17 @@ Format of rules inside selectors will be enforced by the use of [CSSComb](css-co
 
 - - -
 
+### Stylus
+
+[Stylus](stylus)
+
+[stylus]: https://learnboost.github.io/stylus/
+
 ### SASS
+
+[Convert SASS to Stylus](convert-sass-stylus)
+
+[convert-sass-stylus]: http://sass2stylus.com/
 
 The above example of BEM written in SASS
 
