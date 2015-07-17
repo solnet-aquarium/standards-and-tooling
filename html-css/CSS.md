@@ -19,8 +19,6 @@ For the purposes of this document, unless otherwise indicated "CSS" means CSS, S
 
 The **Block**, **Element**, **Modifier** methodology (commonly referred to as [BEM](bem-site)) is a popular naming convention for classes in HTML and CSS.
 
-**Important**: We will use a single dash - instead of the double underscore to denote an Element. We agree that this is faster to type!
-
 It's not our intention to use the [BEM project framework](bem-projects) as this goes well beyond the boundaries of CSS naming conventions.
 
 Here is an example of the [BEM](bem-site) from [BEM 101](bem-101)
@@ -30,7 +28,7 @@ Here is an example of the [BEM](bem-site) from [BEM 101](bem-101)
 .btn {}
 
 /* Element that depends upon the block */ 
-.btn-price {}
+.btn__price {}
 
 /* Modifier that changes the style of the block */
 .btn--orange {} 
@@ -95,7 +93,7 @@ The above example of BEM written in SASS
 .btn {
 
   /* Element that depends upon the block */ 
-  &-price {}
+  &__price {}
 
   /* Modifier that changes the style of the block */
   &--orange {} 
@@ -110,7 +108,7 @@ Outputs:
 .btn {}
 
 /* Element that depends upon the block */ 
-.btn-price {}
+.btn__price {}
 
 /* Modifier that changes the style of the block */
 .btn--orange {} 
