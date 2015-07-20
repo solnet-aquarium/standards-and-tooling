@@ -1,0 +1,36 @@
+.table {
+  width: 100%;
+}
+
+.table--standard {
+  thead {
+    th {
+      padding: 5px;
+      background: $color-brand-prim;
+      color: #fff;
+    }
+  }
+  tfoot {
+    th {
+      padding: 5px;
+      background: $gray-lighter;
+    }
+  }
+}
+
+
+
+
+.responsive-dl {
+  @include make-row();
+  dt {
+    @include make-xs-column(12);
+    @include make-sm-column(4);
+    @include make-md-column(3);
+  }
+  dd {
+    @include make-xs-column(12);
+    @include make-sm-column(5);
+    @include make-md-column(9);
+  }
+}

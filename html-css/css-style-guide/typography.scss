@@ -1,0 +1,50 @@
+
+// Header spacing
+h1, .heading1, h2, .heading2 {
+  @extend .margin-top-md;
+  @extend .margin-bottom-sm;
+}
+
+h3, .heading3 {
+  @extend .margin-top-sm;
+  @extend .margin-bottom-xs;
+}
+
+h4, .heading4, h5, .heading5 {
+  @extend .margin-top-sm;
+  @extend .margin-bottom-xs;
+}
+
+
+// Header definitions
+// 
+
+h1, .heading1 {
+  @include font-size($font-size-h1);
+  font-weight: $font-weight-h1;
+}
+
+h2, .heading2 {
+  @include font-size($font-size-h2);
+  font-weight: $font-weight-h2;
+}
+
+h3, .heading3 {
+  @include font-size($font-size-h3);
+  font-weight: $font-weight-h3;
+}
+
+h4, .heading4 {
+  @include font-size($font-size-h4);
+  font-weight: $font-weight-h4;
+}
+
+h5, .heading5 {
+  @include font-size($font-size-h5);
+  font-weight: $font-weight-h5;
+}
+
+h6, .heading6 {
+  @include font-size($font-size-h6);
+  font-weight: $font-weight-h6;
+}

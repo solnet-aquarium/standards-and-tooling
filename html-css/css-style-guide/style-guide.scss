@@ -1,0 +1,16 @@
+//Declarations used to visually show block elements in the style guide, such as margins
+
+.margin-demo {
+  background-color: rgba(0,0,0,.15);
+  margin-bottom: 2px;
+  .margin-box {
+    width: 50%;
+    height: 100px;
+    background-color: rgba(0,0,0,.4);
+    padding: 30px;
+    text-align: center;
+    @include font-size(20);
+    color: #fff;
+    display: inline-block; //avoid margin collapse on top and bottom
+  }
+}
