@@ -1,17 +1,34 @@
-//LOAD BS VARIABLES HERE SO THEY ARE AVAILABLE FOR YOUR OWN USE!!!!!!!!!!!!!!!!!!!!
-@import "../bootstrap/variables here";
-
-
+//Load BS variables for reference
+@import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/variables";
 
 //NOTE: These variables are referenced by Bootstrap. So any variables defined here will overwrite the BS ones!!!!!!!!!!!!
 
 
-$color-brand-prim       : #067c89;
-$color-brand-prim-lt    : lighten($color-brand-prim, 10%);
-$color-brand-prim-dk    : darken($color-brand-prim, 10%);
 
 
-// Heading sizes
+$brand-primary:         #067c89;
+$brand-primary-lt:      lighten($brand-primary, 10%);
+$brand-primary-dk:      darken($brand-primary, 10%);
+
+$brand-secondary:       #96165B;
+$brand-teritary:        #eaedf4;
+$brand-neutral:         #727784;
+
+$brand-success:         $brand-primary;
+$brand-info:            $brand-primary-lt;
+$brand-warning:         #f34c02;
+$brand-danger:          $brand-warning;
+
+$gray-darkest:           darken($brand-neutral, 45%);
+$gray-darker:            darken($brand-neutral, 30%);
+$gray-dark:              darken($brand-neutral, 15%);  
+$gray:                   $brand-neutral;
+$gray-light:             lighten($brand-neutral, 15%);  
+$gray-lighter:           lighten($brand-neutral, 30%); 
+$gray-lightest:          lighten($brand-neutral, 45%); 
+
+
+// Headings
 
 $font-size-h1     : 50;            
 $font-size-h2     : 36;            
@@ -19,6 +36,13 @@ $font-size-h3     : 26;
 $font-size-h4     : 21;            
 $font-size-h5     : 18;            
 $font-size-h6     : 16; 
+
+$font-colour-h1     : $brand-primary;            
+$font-colour-h2     : $brand-secondary;            
+$font-colour-h3     : $brand-neutral;            
+$font-colour-h4     : $font-colour-h3;            
+$font-colour-h5     : $font-colour-h3;            
+$font-colour-h6     : $font-colour-h3; 
 
 $font-weight-h1     : 300;            
 $font-weight-h2     : 300;            
@@ -29,6 +53,8 @@ $font-weight-h6     : 700;
 
 
 
+$body-copy          : $gray-darker;
+
 
 // Define margin values for margin helper mixin
 
@@ -36,6 +62,13 @@ $margin-xs        : 1%;
 $margin-sm        : 3.5%;
 $margin-md        : 8%;
 $margin-lg        : 15%;
+
+
+// Tables
+
+$color-table-head     : $brand-primary; 
+$color-table-footer   : $gray-lighter; 
+$color-table-cell-bg  : $gray-lightest;
 
 
 // Set up panel columns
@@ -74,16 +107,19 @@ $border-radius    : 3px;
 //** `<input>` background color
 $input-bg:                       #fff !default;
 //** `<input disabled>` background color
-$input-bg-disabled:              $gray-lighter;
+$input-bg-disabled:              $gray-lightest;
 
 //** Text color for `<input>`s
-$input-color:                    $color-brand-prim;
+$input-color:                    $brand-primary;
 //** `<input>` border color
-$input-border:                   $color-brand-prim-lt;
+$input-border:                   $brand-primary-lt;
 //** `<input>` border radius
 $input-border-radius:            $border-radius;
 //** Border color for inputs on focus
-$input-border-focus:             $color-brand-prim-dk;
+$input-border-focus:             $brand-primary-dk;
+
+
+
 
 
 

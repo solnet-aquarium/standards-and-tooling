@@ -1,12 +1,145 @@
 //Declarations used to visually show block elements in the style guide, such as margins
 
+
+
+// function to add border if the palette colour is very light and needs an edge defined.
+// 
+@function set-border-color($color) {
+  @if (lightness($color) > 93) {
+    @return $gray-lighter; // very Light backgorund, return gray border color
+  } @else {
+    @return #fff; // Darker background, return white color
+  }
+}
+
+
+
+
+.colour-palette {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+  @extend .margin-horizontal-sm;
+  @extend .margin-bottom-md;
+  &.colour-palette--prim {
+    background-color: $brand-primary;
+    border: 1px solid set-border-color($brand-primary);
+  }
+  &.colour-palette--prim-lt {
+    background-color: $brand-primary-lt;
+    border: 1px solid set-border-color($brand-primary-lt);
+  }
+  &.colour-palette--prim-dk {
+    background-color: $brand-primary-dk;
+    border: 1px solid set-border-color($brand-primary-dk);
+  }
+
+  &.colour-palette--sec {
+    background-color: $brand-secondary;
+    border: 1px solid set-border-color($brand-secondary);
+  }
+  &.colour-palette--ter {
+    background-color: $brand-teritary;
+    border: 1px solid set-border-color($brand-teritary);
+  }
+  &.colour-palette--gray {
+    background-color: $brand-neutral;
+    border: 1px solid set-border-color($brand-neutral);
+    &:after {
+      display: block;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      
+      border-bottom: 6px solid $gray;
+      position: relative;
+      top: 102px;
+      left: 70px;
+    }
+  }
+  
+  &.colour-palette--success {
+    background-color: $brand-success;
+  }
+  &.colour-palette--info {
+    background-color: $brand-info;
+  }
+  &.colour-palette--warning {
+    background-color: $brand-warning;
+  }
+  &.colour-palette--danger {
+    background-color: $brand-danger;
+  }
+  span {
+    position: absolute;
+    bottom: -41px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 3px;
+  }
+}
+
+.colour-palette-sml {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  @extend .margin-horizontal-xs;
+  &.colour-neutral-dkst {
+    background-color: $gray-darkest;
+    border: 1px solid set-border-color($gray-darkest);
+  }
+  &.colour-neutral-dkr {
+    background-color: $gray-darker;
+    border: 1px solid set-border-color($gray-darker);
+  }
+  &.colour-neutral-dk {
+    background-color: $gray-dark;
+    border: 1px solid set-border-color($gray-dark);
+  }
+  &.colour-neutral {
+    background-color: $gray;
+    border: 1px solid set-border-color($gray);
+    &:after {
+      display: block;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      
+      border-bottom: 6px solid $gray;
+      position: relative;
+      top: 62px;
+      left: 24px;
+    }
+  }
+  &.colour-neutral-lt {
+    background-color: $gray-light;
+    border: 1px solid set-border-color($gray-light);
+  }
+  &.colour-neutral-lter {
+    background-color: $gray-lighter;
+    border: 1px solid set-border-color($gray-lighter);
+  }
+  &.colour-neutral-ltst {
+    background-color: $gray-lightest;
+    border: 1px solid set-border-color($gray-lightest);
+  }
+}
+
+
+
 .margin-demo {
-  background-color: rgba(0,0,0,.15);
+  background-color: $gray-lightest;
   margin-bottom: 2px;
   .margin-box {
     width: 50%;
     height: 100px;
-    background-color: rgba(0,0,0,.4);
+    background-color: $gray-dark;
     padding: 30px;
     text-align: center;
     @include font-size(20);
