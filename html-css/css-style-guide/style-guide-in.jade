@@ -3,9 +3,14 @@ div(ng-include='"components/navbar/navbar.html"')
   .row
     .col-md-8
       
+      .design-notes
+            h3 Device for design notes
+            p You can expland on concepts with this block.
+            
+
       h1.heading1 Colour Palette
       
-      .row
+      .palette-container
         .colour-palette.colour-palette--prim
           span Primary
         .colour-palette.colour-palette--prim-lt
@@ -13,7 +18,7 @@ div(ng-include='"components/navbar/navbar.html"')
         .colour-palette.colour-palette--prim-dk
           span Primary dark
 
-      .row
+      .palette-container
         .colour-palette.colour-palette--sec
           span Secondary
         .colour-palette.colour-palette--ter
@@ -21,7 +26,7 @@ div(ng-include='"components/navbar/navbar.html"')
         .colour-palette.colour-palette--gray
           span Neutral
       
-      .row
+      .palette-container
         h4.heading4 Neutral Shades
         .colour-palette-sml.colour-neutral-dkst
         .colour-palette-sml.colour-neutral-dkr
@@ -31,7 +36,7 @@ div(ng-include='"components/navbar/navbar.html"')
         .colour-palette-sml.colour-neutral-lter
         .colour-palette-sml.colour-neutral-ltst
 
-      .row
+      .palette-container
         h4.heading4 Bootstrap naming
         .colour-palette.colour-palette--success
           span Success
@@ -91,6 +96,48 @@ div(ng-include='"components/navbar/navbar.html"')
       p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl./p 
 
       hr
+      .col-sm-8
+        h1.heading1 Column of Text
+
+        p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+        h2.heading2 Heading 2
+
+        p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+        h3.heading3 Heading 3
+
+        p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+        h4.heading4 Heading 4
+
+        p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+        h5.heading5 Heading 5
+
+        p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+        h6.heading6 Heading 6
+
+        p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl./p 
+
+      .col-sm-4
+        h1.heading1 Column of Text
+
+        p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula.
+        h2.heading2 Heading 2
+
+        p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula.
+        h3.heading3 Heading 3
+
+        p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula.
+        h4.heading4 Heading 4
+
+        p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula.
+        h5.heading5 Heading 5
+
+        p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+        h6.heading6 Heading 6
+
+        p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl./p 
+      .clearfix
+
+      hr  
 
       h2.heading2 Articles
   
@@ -356,64 +403,84 @@ div(ng-include='"components/navbar/navbar.html"')
 
 
           h4.heading4 Radio Buttons:
+          
+
+          .sol-radio
+            input.sol-radio(id="radio1" type="radio" name="radio_button" value="radio_1")
+            label(for="radio1") Radio 1
+        
+          .sol-radio
+            input.sol-radio(id="radio2" type="radio" name="radio_button" value="radio_2")
+            label(for="radio2") Radio 2
+        
+          .sol-radio
+            input.sol-radio(id="radio3" type="radio" name="radio_button" value="radio_3")
+            label(for="radio3") Radio 3
+        
+          .sol-radio
+            input.sol-radio(id="radio4" type="radio" name="radio_button" value="radio_4" disabled)
+            label(for="radio4") Radio Disabled
             
-          .radio
-            label Radio 1
-              input.radio(type="radio" name="radio_button" value="radio_1")
-        
-        
-          .radio
-            label Radio 2
-              input.radio(type="radio" name="radio_button" value="radio_2")
-        
-        
-          .radio
-            label Radio 3
-              input.radio(type="radio" name="radio_button" value="radio_3")
-        
-        
-          .radio
-            label Radio Disabled
-              input.radio(type="radio" name="radio_button" value="radio_4" disabled)
-            
+          
+
+          h4.heading4 Inline Radio Buttons:
+          
+          .sol-checkbox-inline-container
+            .sol-radio-inline
+              input.sol-radio(id="radio5" type="radio" name="radio_button" value="radio_1")
+              label(for="radio5") Radio 5
+          
+            .sol-radio-inline
+              input.sol-radio(id="radio6" type="radio" name="radio_button" value="radio_2")
+              label(for="radio6") Radio 6
+          
+            .sol-radio-inline
+              input.sol-radio(id="radio7" type="radio" name="radio_button" value="radio_3")
+              label(for="radio7") Radio 7
+          
+            .sol-radio-inline
+              input.sol-radio(id="radio8" type="radio" name="radio_button" value="radio_4" disabled)
+              label(for="radio8") Radio Disabled
+              
           
 
 
           h4.heading4 Checkboxes
           
-          .checkbox 
-            label Checkbox 1
-              input.checkbox(type="checkbox" name="checkboxes" value="check_1")
+          .sol-checkbox 
+            input.sol-checkbox(id="checkbox1" type="checkbox" name="checkboxes" value="check_1")
+            label(for="checkbox1") Checkbox 1
           
-          .checkbox 
-            label Checkbox 2
-              input.checkbox(type="checkbox" name="checkboxes" value="check_2")
+          .sol-checkbox 
+            input.sol-checkbox(id="checkbox2" type="checkbox" name="checkboxes" value="check_2")
+            label(for="checkbox2") Checkbox 2
           
-          .checkbox 
-            label Checkbox 3
-              input.checkbox(type="checkbox" name="checkboxes" value="check_3")
+          .sol-checkbox 
+            input.sol-checkbox(id="checkbox3" type="checkbox" name="checkboxes" value="check_3")
+            label(for="checkbox3") Checkbox 3
           
-          .checkbox 
-            label Checkbox Disabled
-              input.checkbox(type="checkbox" name="checkboxes" value="check_4" disabled)
+          .sol-checkbox 
+            input.sol-checkbox(id="checkbox4" type="checkbox" name="checkboxes" value="check_4" disabled)
+            label(for="checkbox4") Checkbox Disabled
           
           h4.heading4 Checkboxes inline
           
-          .checkbox-inline 
-            label Checkbox 1
-              input.checkbox(type="checkbox" name="checkboxes" value="check_1")
-          
-          .checkbox-inline 
-            label Checkbox 2
-              input.checkbox(type="checkbox" name="checkboxes" value="check_2")
-          
-          .checkbox-inline 
-            label Checkbox 3
-              input.checkbox(type="checkbox" name="checkboxes" value="check_3")
-          
-          .checkbox-inline 
-            label Checkbox Disabled
-              input.checkbox(type="checkbox" name="checkboxes" value="check_4" disabled)
+          .sol-checkbox-inline-container
+            .sol-checkbox-inline 
+              input.sol-checkbox(id="checkbox5" type="checkbox" name="checkboxes" value="check_1")
+              label(for="checkbox5") Checkbox 1
+            
+            .sol-checkbox-inline 
+              input.sol-checkbox(id="checkbox6" type="checkbox" name="checkboxes" value="check_2")
+              label(for="checkbox6") Checkbox 2
+            
+            .sol-checkbox-inline 
+              input.sol-checkbox(id="checkbox7" type="checkbox" name="checkboxes" value="check_3")
+              label(for="checkbox7") Checkbox 3
+            
+            .sol-checkbox-inline 
+              input.sol-checkbox(id="checkbox8" type="checkbox" name="checkboxes" value="check_4" disabled)
+              label(for="checkbox8") Checkbox Disabled
 
           .form-group 
             label.form-control(for="password") Password:

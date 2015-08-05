@@ -13,7 +13,14 @@
 }
 
 
-
+.palette-container {
+  div:first-of-type {
+    margin-left: 0;
+  }
+  div:last-of-type {
+    margin-right: 0;
+  }
+}
 
 .colour-palette {
   width: 100px;
@@ -147,3 +154,30 @@
     display: inline-block; //avoid margin collapse on top and bottom
   }
 }
+
+.design-notes {
+  padding: 5px 20px 20px 80px;
+  @extend .margin-vertical-md;
+  background: linear-gradient(90deg, $brand-warning 70px, $gray-lightest 70px);
+  position: relative;
+  &:before {
+    content: "!";
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    width:40px;
+    height:40px;
+    @include font-size(30);
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    line-height: 35px;
+  }
+}
+
+
+
+
+

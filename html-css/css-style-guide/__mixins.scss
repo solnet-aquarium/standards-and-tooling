@@ -1,3 +1,4 @@
+
 // #######################################################
 // Typography
 
@@ -8,7 +9,7 @@
 }
 
 @mixin font-size($size) {
-  font-size: $size + 'px';
+  font-size: $size * 1px;
   font-size: calculateRem($size);
 }
 
@@ -126,7 +127,8 @@ $margin-map: (
 'xs'          : $margin-xs,
 'sm'          : $margin-sm,
 'md'          : $margin-md,
-'lg'          : $margin-lg
+'lg'          : $margin-lg,
+'xl'          : $margin-xl
 );
 
 
@@ -137,18 +139,76 @@ $margin-map: (
             margin-#{$selector}: $margin-value;
         }
     }
+    @media (min-width: $screen-sm) { 
+      @each $name, $margin-value in $margin-map {
+        .margin-#{$selector}-#{$name} {
+            margin-#{$selector}: $margin-value * $margin-modifier;
+        }
+      }
+    }
+    @media (min-width: $screen-md) { 
+      @each $name, $margin-value in $margin-map {
+        .margin-#{$selector}-#{$name} {
+            margin-#{$selector}: $margin-value * ($margin-modifier * $margin-modifier);
+        }
+      }
+    }
+    @media (min-width: $screen-lg) { 
+      @each $name, $margin-value in $margin-map {
+        .margin-#{$selector}-#{$name} {
+            margin-#{$selector}: $margin-value * ($margin-modifier * $margin-modifier * $margin-modifier);
+        }
+      }
+    }
+
 }
 
 @mixin set-multi-margins () {
     @each $name, $margin-value in $margin-map {
+      .margin-vertical-#{$name} {
+          margin-top: $margin-value;
+          margin-bottom: $margin-value;
+      }
+      .margin-horizontal-#{$name} {
+          margin-left: $margin-value;
+          margin-right: $margin-value;
+      }
+    }
+    @media (min-width: $screen-sm) {
+      @each $name, $margin-value in $margin-map {
         .margin-vertical-#{$name} {
-            margin-top: $margin-value;
-            margin-bottom: $margin-value;
+            margin-top: $margin-value * ($margin-modifier);
+            margin-bottom: $margin-value * ($margin-modifier);
         }
         .margin-horizontal-#{$name} {
-            margin-left: $margin-value;
-            margin-right: $margin-value;
+            margin-left: $margin-value * ($margin-modifier);
+            margin-right: $margin-value * ($margin-modifier);
         }
+      }
+    }
+    @media (min-width: $screen-md) {
+      @each $name, $margin-value in $margin-map {
+        .margin-vertical-#{$name} {
+            margin-top: $margin-value * ($margin-modifier * $margin-modifier);
+            margin-bottom: $margin-value * ($margin-modifier * $margin-modifier);
+        }
+        .margin-horizontal-#{$name} {
+            margin-left: $margin-value * ($margin-modifier * $margin-modifier);
+            margin-right: $margin-value * ($margin-modifier * $margin-modifier);
+        }
+      }
+    }
+    @media (min-width: $screen-lg) {
+      @each $name, $margin-value in $margin-map {
+        .margin-vertical-#{$name} {
+            margin-top: $margin-value * ($margin-modifier * $margin-modifier * $margin-modifier);
+            margin-bottom: $margin-value * ($margin-modifier * $margin-modifier * $margin-modifier);
+        }
+        .margin-horizontal-#{$name} {
+            margin-left: $margin-value * ($margin-modifier * $margin-modifier * $margin-modifier);
+            margin-right: $margin-value * ($margin-modifier * $margin-modifier * $margin-modifier);
+        }
+      }
     }
 }
 

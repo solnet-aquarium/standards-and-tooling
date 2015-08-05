@@ -19,13 +19,13 @@ $brand-info:            $brand-primary-lt;
 $brand-warning:         #f34c02;
 $brand-danger:          $brand-warning;
 
-$gray-darkest:           darken($brand-neutral, 45%);
-$gray-darker:            darken($brand-neutral, 30%);
-$gray-dark:              darken($brand-neutral, 15%);  
-$gray:                   $brand-neutral;
-$gray-light:             lighten($brand-neutral, 15%);  
-$gray-lighter:           lighten($brand-neutral, 30%); 
-$gray-lightest:          lighten($brand-neutral, 45%); 
+$gray-darkest:          darken($brand-neutral, 45%);
+$gray-darker:           darken($brand-neutral, 30%);
+$gray-dark:             darken($brand-neutral, 15%);  
+$gray:                  $brand-neutral;
+$gray-light:            lighten($brand-neutral, 15%);  
+$gray-lighter:          lighten($brand-neutral, 30%); 
+$gray-lightest:         lighten($brand-neutral, 45%); 
 
 
 // Headings
@@ -57,11 +57,17 @@ $body-copy          : $gray-darker;
 
 
 // Define margin values for margin helper mixin
-
-$margin-xs        : 1%;
-$margin-sm        : 3.5%;
-$margin-md        : 8%;
-$margin-lg        : 15%;
+// Values are for mobile screens
+$margin-xs        : 5px;
+$margin-sm        : 10px;
+$margin-md        : 20px;
+$margin-lg        : 40px;
+$margin-xl        : 70px;
+// The modifier is how much the above values increase over media breaks
+// First adjustment (sm screens) is calculated by value X margin-modifier, 
+// Second adjustment (md screens) is calculated by value X (margin-modifier X margin-modifier)
+// Second adjustment (lg screens) is calculated by value X (margin-modifier X margin-modifier X margin-modifier)
+$margin-modifier  : 1.2;
 
 
 // Tables
@@ -108,6 +114,7 @@ $border-radius    : 3px;
 $input-bg:                       #fff !default;
 //** `<input disabled>` background color
 $input-bg-disabled:              $gray-lightest;
+$input-disabled:                 $gray-light;
 
 //** Text color for `<input>`s
 $input-color:                    $brand-primary;

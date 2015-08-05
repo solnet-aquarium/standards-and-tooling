@@ -4,20 +4,26 @@ body, p, li {
 
 
 // Header spacing
-h1, .heading1, h2, .heading2 {
+h1, .heading1 {
+  @extend .margin-top-lg;
+  @extend .margin-bottom-sm;
+}
+
+h2, .heading2 {
   @extend .margin-top-md;
   @extend .margin-bottom-sm;
 }
 
 h3, .heading3 {
   @extend .margin-top-sm;
-  @extend .margin-bottom-xs;
+  @extend .margin-bottom-sm;
 }
 
 h4, .heading4, h5, .heading5 {
   @extend .margin-top-sm;
   @extend .margin-bottom-xs;
 }
+
 
 
 // Header definitions

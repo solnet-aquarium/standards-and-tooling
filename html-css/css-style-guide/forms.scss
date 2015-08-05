@@ -1,0 +1,75 @@
+input.sol-checkbox, input.sol-radio {
+  visibility: hidden;
+  width: 0;
+}
+
+.sol-checkbox label, .sol-checkbox-inline label, .sol-radio label, .sol-radio-inline label {
+  cursor: pointer;
+}
+
+.sol-checkbox-inline-container, .sol-radio-inline-container {
+  @extend .clearfix;
+  @extend .margin-vertical-sm;
+}
+
+.sol-checkbox-inline, .sol-radio-inline {
+  float: left;
+  @extend .margin-right-md;
+}
+
+.sol-checkbox label:before, .sol-checkbox-inline label:before, .sol-radio label:before, .sol-radio-inline label:before {
+  //use a blank space to get the height correct
+  content: "\00a0";
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  background: $input-bg;
+  border: 1px solid $input-border;
+  position: relative;
+  font-family: "FontAwesome";
+  line-height: 30px;
+  text-align: center;
+  @include font-size(20);
+  //align to baseline of label
+  margin: 0 10px -2px 0;
+}
+
+//checkbox specific styling
+.sol-checkbox label:before, .sol-checkbox-inline label:before  {
+  border-radius: $input-border-radius;
+  margin: 0 10px -2px 0;
+}
+
+.sol-checkbox:checked + label:before, .sol-checkbox-inline:checked + label:before  {
+  border: 1px solid $brand-primary;
+  content: "\f00c";
+  color: $brand-primary;
+}
+
+//Styling for disabled checkboxes
+.sol-checkbox:disabled, .sol-radio:disabled {
+  + label {
+    cursor: not-allowed;
+    color: $input-disabled;
+    &:before {
+      border: 1px solid $input-disabled;
+    }
+  }
+}
+
+
+.sol-radio, .sol-radio-inline {
+   & label:before {
+    border-radius: 50%;
+    margin: 0 10px -2px 0;
+   }
+}
+
+.sol-radio:checked + label:before, .sol-radio-inline:checked + label:before  {
+  background: radial-gradient($brand-primary-lt 0, $brand-primary 40%, #fff 45%);
+}
+
+
+
+
+
