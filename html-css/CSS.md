@@ -54,7 +54,9 @@ Format of rules inside selectors will be enforced by the use of [CSSComb](css-co
 
 BEM benefits developers deciphering code. But what about other users? One user that comes to mind is a Designer who updates content through a CMS. Using BEM would require them to have clear documentation on how to implement styles; documentation we would have to write!
 
-For these users I would simplify some elements; tables being a classic example. Rather than adding classes to `table`, `th` and `td`, it would be easier for the user to impliment all the styles by applying one class at the top parent. 
+For these users I would simplify some elements; tables being a classic example. Rather than adding classes to `table`, `th` and `td`, it would be easier for the user to apply one class to handle all the styling.
+
+This has been used in the styling of the table in the style guide as an example. 
 
 #### Required Reading
 
@@ -62,15 +64,15 @@ For these users I would simplify some elements; tables being a classic example. 
  
  - [Modular CSS with SASS and BEM article](sass-bem-article) is a good starter for the concepts
 
-[sass-bem-article]: http://mathayward.com/modular-css-with-sass-and-bem/
+[sass-bem-article]: http://mathayward.com/modular-css-with-sass-and-bem
 
  - [BEM 101](bem-101) on CSS Tricks, which is another 'starter'
  
-[bem-101]: https://css-tricks.com/bem-101/
+[bem-101]: https://css-tricks.com/bem-101
 
  - [Mixing SASS, BEM and Bootstrap hints](sass-bem-bs) 
 
-[sass-bem-bs]: http://andersonorui.com/2014/08/08/bootstrap-sass-bem/
+[sass-bem-bs]: http://andersonorui.com/2014/08/08/bootstrap-sass-bem
 
 - - -
 
@@ -78,7 +80,7 @@ For these users I would simplify some elements; tables being a classic example. 
 
 [Stylus](stylus)
 
-[stylus]: https://learnboost.github.io/stylus/
+[stylus]: https://learnboost.github.io/stylus
 
 [Stylus for Bootstrap](bootstrap-stylus)
 
@@ -90,7 +92,7 @@ For these users I would simplify some elements; tables being a classic example. 
 
 [Convert SASS to Stylus](convert-sass-stylus)
 
-[convert-sass-stylus]: http://sass2stylus.com/
+[convert-sass-stylus]: http://sass2stylus.com
 
 The above example of BEM written in SASS
 
