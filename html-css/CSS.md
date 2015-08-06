@@ -58,21 +58,32 @@ For these users I would simplify some elements; tables being a classic example. 
 
 This has been used in the styling of the table in the style guide as an example. 
 
+```HTML
+  <table cellspacing="0" cellpadding="0" class="table table--standard">
+    <thead>
+      <tr><th>...
+    
+        </th>
+      </tr>
+    </tfoot>
+  </table>
+```
+
 #### Required Reading
 
  - [Main BEM site](bem-site)
  
  - [Modular CSS with SASS and BEM article](sass-bem-article) is a good starter for the concepts
 
-[sass-bem-article]: http://mathayward.com/modular-css-with-sass-and-bem
+[sass-bem-article]: http://mathayward.com/modular-css-with-sass-and-bem/
 
  - [BEM 101](bem-101) on CSS Tricks, which is another 'starter'
  
-[bem-101]: https://css-tricks.com/bem-101
+[bem-101]: https://css-tricks.com/bem-101/
 
  - [Mixing SASS, BEM and Bootstrap hints](sass-bem-bs) 
 
-[sass-bem-bs]: http://andersonorui.com/2014/08/08/bootstrap-sass-bem
+[sass-bem-bs]: http://andersonorui.com/2014/08/08/bootstrap-sass-bem/
 
 - - -
 
@@ -80,7 +91,7 @@ This has been used in the styling of the table in the style guide as an example.
 
 [Stylus](stylus)
 
-[stylus]: https://learnboost.github.io/stylus
+[stylus]: https://learnboost.github.io/stylus/
 
 [Stylus for Bootstrap](bootstrap-stylus)
 
@@ -92,7 +103,7 @@ This has been used in the styling of the table in the style guide as an example.
 
 [Convert SASS to Stylus](convert-sass-stylus)
 
-[convert-sass-stylus]: http://sass2stylus.com
+[convert-sass-stylus]: http://sass2stylus.com/
 
 The above example of BEM written in SASS
 
