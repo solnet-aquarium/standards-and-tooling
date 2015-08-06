@@ -50,6 +50,12 @@ However, Bootstrap is NOT written exactly with this in mind, or in the BEM synta
 
 Format of rules inside selectors will be enforced by the use of [CSSComb](css-comb).
 
+#### When not to use it
+
+BEM benefits developers deciphering code. But what about other users? One user that comes to mind is a Designer who updates content through a CMS. Using BEM would require them to have clear documentation on how to implement styles; documentation we would have to write!
+
+For these users I would simplify some elements; tables being a classic example. Rather than adding classes to `table`, `th` and `td`, it would be easier for the user to impliment all the styles by applying one class at the top parent. 
+
 #### Required Reading
 
  - [Main BEM site](bem-site)
@@ -118,7 +124,7 @@ Outputs:
 
  - **Set a rem font size with pixel fallback**
  - **Cross browser opacity**: This mixin ensures cross browser opacity all the way down to Internet Explorer 5.
- - **Visually hide an element**: When you hide an element with display: none, that prevents screen readers from reading it to the user. Sometimes that’s fine, but in other cases this will make the site hard to use for people with screen readers.
+ - **Visually hide an element**: When you hide an element with display: none, that prevents screen readers from reading it to the user. Sometimes that’s fine, but in other cases this will make the site harder for those users to navigate.
  - **Placeholder text**: Style the text colour
  - **Transitions**: For all browsers, accepting any arguments
  - **Margin helpers**: Set margins top, bottom, left, right and other combinations as percentages based on variables
