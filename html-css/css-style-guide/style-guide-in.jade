@@ -1,4 +1,5 @@
 div(ng-include='"components/navbar/navbar.html"')
+  
 .container
   .row
     .col-md-8
@@ -10,7 +11,7 @@ div(ng-include='"components/navbar/navbar.html"')
 
       h1.heading1 Colour Palette
       
-      .palette-container
+      .palette-container.margin-vertical-md
         .colour-palette.colour-palette--prim
           span Primary
         .colour-palette.colour-palette--prim-lt
@@ -18,7 +19,7 @@ div(ng-include='"components/navbar/navbar.html"')
         .colour-palette.colour-palette--prim-dk
           span Primary dark
 
-      .palette-container
+      .palette-container.margin-vertical-md
         .colour-palette.colour-palette--sec
           span Secondary
         .colour-palette.colour-palette--ter
@@ -26,7 +27,7 @@ div(ng-include='"components/navbar/navbar.html"')
         .colour-palette.colour-palette--gray
           span Neutral
       
-      .palette-container
+      .palette-container.margin-vertical-md
         h4.heading4 Neutral Shades
         .colour-palette-sml.colour-neutral-dkst
         .colour-palette-sml.colour-neutral-dkr
@@ -36,7 +37,7 @@ div(ng-include='"components/navbar/navbar.html"')
         .colour-palette-sml.colour-neutral-lter
         .colour-palette-sml.colour-neutral-ltst
 
-      .palette-container
+      .palette-container.margin-vertical-md
         h4.heading4 Bootstrap naming
         .colour-palette.colour-palette--success
           span Success
@@ -78,7 +79,7 @@ div(ng-include='"components/navbar/navbar.html"')
 
       h1.heading1 Heading 1
 
-      p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+      p Lorem ipsum dolor sit amet, <a href="">adipiscing elit</a>. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
       h2.heading2 Heading 2
 
       p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
@@ -117,7 +118,7 @@ div(ng-include='"components/navbar/navbar.html"')
         p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl./p 
 
       .col-sm-4
-        h1.heading1 Column of Text
+        h1.heading1 Small Column
 
         p Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula.
         h2.heading2 Heading 2
@@ -334,54 +335,83 @@ div(ng-include='"components/navbar/navbar.html"')
       fieldset
         legend Legend
 
-        p The Form:
+        h2 Horizontal Form:
+
+
+        form.form-horizontal
+          .form-group 
+            label.col-md-3(for="text_field") Text Field:
+            .col-md-9
+              input.form-control(type="text" id="text_field") 
+          
+
+
+          .form-group 
+            label.col-md-3(for="text_field_disabled") Disabled Text Field:
+            .col-md-9
+              input.form-control(type="text" id="text_field_disabled" disabled value="I'm disabled") 
+          
+
+
+          .form-group 
+            label.col-md-3(for="text_field_readonly") Readonly Text Field:
+            .col-md-9
+              input.form-control(type="text" id="text_field_readonly" readonly value="I'm readonly") 
+          
+
+
+          .form-group 
+            label.col-md-3(for="text_area") Text Area:
+            .col-md-9
+              textarea.form-control(id="text_area")
+
+          .form-group 
+            label.col-md-3(for="text_area_disabled") Disabled Text Area:
+            .col-md-9
+              textarea.form-control(id="text_area_disabled" disabled) I'm disabled
+          
+
+
+          .form-group  
+            label.col-md-3(for="text_area2") Readonly Text Area:
+            .col-md-9
+              textarea.form-control(id="text_area2" readonly) I'm readonly
+          
+
+        h2 Basic Form:
 
 
         form
           .form-group 
-            label.form-control(for="text_field") Text Field:
+            label(for="text_field") Text Field:
 
             input.form-control(type="text" id="text_field") 
           
 
 
           .form-group 
-            label.form-control(for="text_field_disabled") Disabled Text Field:
+            label(for="text_field_disabled") Disabled Text Field:
 
             input.form-control(type="text" id="text_field_disabled" disabled value="I'm disabled") 
           
 
 
           .form-group 
-            label.form-control(for="text_field_readonly") Readonly Text Field:
+            label(for="text_field_readonly") Readonly Text Field:
 
             input.form-control(type="text" id="text_field_readonly" readonly value="I'm readonly") 
           
 
 
           .form-group 
-            label.form-control(for="text_area") Text Area:
+            label(for="text_area") Text Area:
 
             textarea.form-control(id="text_area")
           
 
-
+        
           .form-group 
-            label.form-control(for="text_area_disabled") Disabled Text Area:
-
-            textarea.form-control(id="text_area_disabled" disabled) I'm disabled
-          
-
-
-          .form-group  
-            label.form-control(for="text_area") Readonly Text Area:
-
-            textarea.form-control(id="text_area" readonly) I'm readonly
-          
-
-
-          .form-group 
-            label.form-control(for="select_element") Select Element:
+            label(for="select_element") Select Element:
 
             select.form-control(id="select_element")
               optgroup(label="Option Group 1")
@@ -483,14 +513,14 @@ div(ng-include='"components/navbar/navbar.html"')
               label(for="checkbox8") Checkbox Disabled
 
           .form-group 
-            label.form-control(for="password") Password:
+            label(for="password") Password:
 
             input.form-control(type="password" id="password") 
           
 
 
           .form-group 
-            label.form-control(for="file") File Input:
+            label(for="file") File Input:
 
             input.form-control(type="file" class="file" id="file") 
           
@@ -499,63 +529,63 @@ div(ng-include='"components/navbar/navbar.html"')
           h3.heading3 HTML5-specific Form Elements
 
           .form-group 
-            label.form-control(for="email") Email:
+            label(for="email") Email:
 
             input.form-control(type="email" id="email") 
           
 
 
           .form-group 
-            label.form-control(for="url") URL:
+            label(for="url") URL:
 
             input.form-control(type="url" id="url") 
           
 
 
           .form-group 
-            label.form-control(for="tel") Telephone:
+            label(for="tel") Telephone:
 
             input.form-control(type="tel" id="tel") 
           
 
 
           .form-group 
-            label.form-control(for="number") Number:
+            label(for="number") Number:
 
             input.form-control(type="number" id="number" min="0" max="10" step="1" value="5") 
           
 
 
           .form-group 
-            label.form-control(for="search") Search:
+            label(for="search") Search:
 
             input.form-control(type="search" id="search") 
           
 
 
           .form-group 
-            label.form-control(for="date") Date:
+            label(for="date") Date:
 
             input.form-control(type="date" id="date") 
           
 
 
           .form-group 
-            label.form-control(for="time") Time:
+            label(for="time") Time:
 
             input.form-control(type="time" id="time") 
           
 
 
           .form-group 
-            label.form-control(for="color") Color:
+            label(for="color") Color:
 
             input.form-control(type="color" id="color") 
           
 
 
           .form-group 
-            label.form-control(for="datalist") Datalist:
+            label(for="datalist") Datalist:
 
             input.form-control(list="browsers" name="browser" type="datalist" id="datalist") 
             datalist(id="browsers")
@@ -568,28 +598,28 @@ div(ng-include='"components/navbar/navbar.html"')
 
 
           .form-group 
-            label.form-control(for="range") Range:
+            label(for="range") Range:
 
             input(type="range" id="range" name="points" min="1" max="10") 
           
 
 
           .form-group 
-            label.form-control(for="output") Output:
+            label(for="output") Output:
 
             output.form-control(name="result" id="output") 42
           
 
 
           .form-group 
-            label.form-control(for="progress") Progress:
+            label(for="progress") Progress:
 
             progress(id="progress" value="65" max="100")
           
 
 
           .form-group 
-            label.form-control(for="meter") Meter:
+            label(for="meter") Meter:
 
             meter(id="meter" min="200" max="500" value="350") 350 degrees
           
