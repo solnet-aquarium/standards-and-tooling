@@ -24,7 +24,7 @@ For Silverstripe projects, [Silverstripe's own conventions](http://docs.silverst
 * Code MUST use 4 spaces for indenting, not tabs.
 * All PHP files MUST use the Unix LF (linefeed) line ending.
 * All PHP files MUST end with a single blank line.
-* Do NOT edit code in the immediate vicinity of your working area only for the sake of formatting. Maintaining commit history is more important.
+* For existing code, do NOT edit code beyond the immediate working area for the sake of formatting. Maintaining commit history is more important. This should just be approached on a common sense basis. E.G. it is OK to re-format and entire foreach loop if you are only changing the contents of the loop. (since you understand the logic and can safely "own" it). But one should reformat an entire existing file just for coding standards.
 
 #### Global
 * No shorthand PHP opening tags (<?)
