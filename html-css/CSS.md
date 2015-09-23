@@ -145,8 +145,10 @@ Outputs:
 
 #### Helpers - A list of whats available
 - **Margins** We have the following available: 
-  - margin-left-xs, margin-left-sm, margin-left-md, margin-left-lg and margin-left-xl 
-  - This applies for top, bottom and right as well 
+  - Use the **xs**, **sm**, **md**, **lg** and **xl** to set the size of the margin
+  - Example: margin-left-xs, margin-right-sm, margin-top-md, margin-bottom-lg and margin-left-xl 
+  - Use **left**, **right**, **top** and **bottom** 
+  - For uniform margins for top and bottom, or left and right, use margin-horizontal-**xx**, or margin-vertical-**xx**.
 
 
 - - -
