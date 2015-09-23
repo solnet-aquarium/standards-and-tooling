@@ -146,9 +146,10 @@ Outputs:
 #### Helpers - A list of whats available
 - **Margins** We have the following available: 
   - Use the **xs**, **sm**, **md**, **lg** and **xl** to set the size of the margin
-  - Example: margin-left-xs, margin-right-sm, margin-top-md, margin-bottom-lg and margin-left-xl 
+  - Example: `margin-left-xs`  `margin-right-sm` `margin-top-md` `margin-bottom`lg and `margin-left-x` 
   - Use **left**, **right**, **top** and **bottom** 
   - For uniform margins for top and bottom, or left and right, use margin-horizontal-**xx**, or margin-vertical-**xx**.
+- **Hyphenation**: Add the class `.hyphenate` to handle the breaking of large words across lines
 
 
 - - -
