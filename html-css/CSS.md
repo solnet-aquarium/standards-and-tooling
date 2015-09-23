@@ -135,7 +135,7 @@ Outputs:
 ```
 #### Mixins - A list of whats in it
 
- - **Set a rem font size with pixel fallback**
+ - **Set a rem font size with pixel fallback** `@include font-size(14)` will render a font at 1.4rems or 14 pixels
  - **Cross browser opacity**: This mixin ensures cross browser opacity all the way down to Internet Explorer 5.
  - **Visually hide an element**: When you hide an element with display: none, that prevents screen readers from reading it to the user. Sometimes that’s fine, but in other cases this will make the site harder for those users to navigate.
  - **Placeholder text**: Style the text colour
