@@ -144,7 +144,9 @@ Outputs:
  - **Nav arrows**: Render an arrow with a given direction, width, height, stroke weight, colour and hover colour
 
 #### Helpers - A list of whats available
-- **Margins**
+- **Margins** We have the following available: 
+- - margin-left-xs, margin-left-sm, margin-left-md, margin-left-lg and margin-left-xl 
+- - This applies for top, bottom and right as well 
 
 
 - - -
