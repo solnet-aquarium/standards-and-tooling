@@ -145,8 +145,8 @@ Outputs:
 
 #### Helpers - A list of whats available
 - **Margins** We have the following available: 
-- - margin-left-xs, margin-left-sm, margin-left-md, margin-left-lg and margin-left-xl 
-- - This applies for top, bottom and right as well 
+  - margin-left-xs, margin-left-sm, margin-left-md, margin-left-lg and margin-left-xl 
+  - This applies for top, bottom and right as well 
 
 
 - - -
