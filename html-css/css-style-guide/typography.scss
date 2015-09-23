@@ -70,3 +70,38 @@ h6, .heading6 {
   font-weight: $font-weight-h6;
   color: $font-colour-h6;
 }
+
+p, li {
+  @include font-size($body-copy-size);
+  line-height: $body-copy-line-height;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  &:before {
+    content:'';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $gray-light;
+    bottom: $link-underline-offset;
+  }
+  &:hover {
+    text-decoration: none;
+    &:before {
+      background-color: $link-hover-color;
+    }
+  }
+  // text-decoration: underline;
+}
+
+.hyphenate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
