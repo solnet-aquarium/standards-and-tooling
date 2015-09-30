@@ -149,7 +149,8 @@ Outputs:
   - Example: `margin-left-xs`  `margin-right-sm` `margin-top-md` `margin-bottom`lg and `margin-left-x` 
   - Use **left**, **right**, **top** and **bottom** 
   - For uniform margins for top and bottom, or left and right, use margin-horizontal-**xx**, or margin-vertical-**xx**.
-- **Hyphenation**: Add the class `.hyphenate` to handle the breaking of large words across lines
+- **Hyphenation**: Add the class `.hyphenate` to handle the breaking of large words across lines. CSS is located in Typography
+- **Verical Center any element**: Add the class `.vertical-center` to position an element in the centre of it's parent. Compatible down to IE9.
 
 
 - - -

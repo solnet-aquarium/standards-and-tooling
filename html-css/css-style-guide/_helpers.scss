@@ -1,10 +1,26 @@
 
 
+//mobile margins
 @include set-margin('top');
 @include set-margin('bottom');
 @include set-margin('left');
 @include set-margin('right');
 @include set-multi-margins();
+
+
+//position an element vertically center back to IE9
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+
 
 
 // Product Panel grid system, instead of flexbox: demo: http://codepen.io/solnet-digital/pen/NPErgr?editors=110
