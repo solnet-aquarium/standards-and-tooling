@@ -2,9 +2,6 @@
  
  - [Quick Setup](#quick-setup)
  - [Style Guide](#style-guide)
- - [Automatic Formatting](#automatic-formatting)
-  - Editor Plugins: *[Vim](#vim), [Eclipse](#eclipse), [Intellij](#intellij), [Sublime Text 3](#sublime-text-3)*
-
  - [Linting](#linting)
   - Editor Plugins: *[Vim](#vim-1), [Eclipse](#eclipse-1), [Intellij](#intellij-1), [Sublime Text 3](#sublime-text-3-1)*
  - [Release Management](#release-management) 
