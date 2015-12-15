@@ -4,6 +4,7 @@
 
 - [Git][git]
 - [JavaScript][javascript]
+- [API][api]
 
 ## About
 
