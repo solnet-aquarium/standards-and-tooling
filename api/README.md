@@ -15,7 +15,8 @@ The following flow charts have been reproduced below for convenience.
 
 ### Introduction
 
-![](https://raw.githubusercontent.com/faceleg/standards-and-tooling/master/api/assets/HTTP-Status-Codes-Key.png)
+![Introduction](https://raw.githubusercontent.com/faceleg/standards-and-tooling/master/api/assets/HTTP-Status-Codes-Key.png)
+![Introduction](https://raw.githubusercontent.com/faceleg/standards-and-tooling/master/api/assets/HTTP-Status-Codes.png)
 
 ### 2XX - 3XX
 
