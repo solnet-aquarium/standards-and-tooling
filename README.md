@@ -4,6 +4,7 @@
 
 - [Git][git]
 - [JavaScript][javascript]
+- [API][api]
 
 ## About
 
@@ -37,4 +38,4 @@ A description of the required pre-commit hooks to be used for projects that incl
 
 [git]: https://github.com/solnetdigital/standards-and-tooling/tree/master/git
 [javascript]: https://github.com/solnetdigital/standards-and-tooling/tree/master/javascript
-
+[api]: https://github.com/solnetdigital/standards-and-tooling/tree/master/api
