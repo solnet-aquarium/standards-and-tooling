@@ -15,7 +15,7 @@ open, active, visible
 
 These are reserved for use as modifier classes and not to have any default declarations assigned. 
 
-An example in SASS:
+An example:
 ```
 .component1 {
   display: none;
@@ -24,6 +24,5 @@ An example in SASS:
 .component1.open {
   display: block;
 }
-
 ```
 The reason for not assigning declarations to the .open class, we don't know how you will 'open' the component. It could be via display, or max-height or height. The above way allows you to customise it per component.
