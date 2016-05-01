@@ -19,9 +19,9 @@ To be continued...
 
 
 
-### Reserved words
+### Proposed reserved words
 
-open, active, visible
+*open, active, visible*
 
 These are reserved for use as modifier classes and not to have any default declarations assigned. 
 
@@ -37,4 +37,8 @@ An example:
 ```
 The reason for not assigning declarations to the .open class, we don't know how you will 'open' the component. It could be via display, or max-height or height. The above way allows you to customise it per component.
 
-Reserved words will be toggled by JS to change the state of a component.
+These reserved words will be toggled by JS to change the state of a component.
+
+*content-wrapper*
+
+Using the component name as a namespace, this class signifies where the components main typography area starts. This is for targeting headings, text and buttons (suggested use only) of the component.
