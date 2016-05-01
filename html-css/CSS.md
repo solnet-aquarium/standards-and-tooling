@@ -45,7 +45,7 @@ Using the component name as a namespace, this class signifies where the componen
 
 An example:
 ```
-.component1 .content-wrap {
+.component1 .content-wrapper {
   padding: 5px;
 }
 
