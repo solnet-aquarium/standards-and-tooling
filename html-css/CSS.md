@@ -21,7 +21,7 @@ To be continued...
 
 ### Proposed reserved words
 
-*open, active, visible*
+**.open  .active  .visible**
 
 These are reserved for use as modifier classes and not to have any default declarations assigned. 
 
@@ -39,6 +39,14 @@ The reason for not assigning declarations to the .open class, we don't know how 
 
 These reserved words will be toggled by JS to change the state of a component.
 
-*content-wrapper*
+**.content-wrapper**
 
-Using the component name as a namespace, this class signifies where the components main typography area starts. This is for targeting headings, text and buttons (suggested use only) of the component.
+Using the component name as a namespace, this class signifies where the components main typography area starts. This is more for formatting around the type and placement rather than targeting headings, text and buttons.
+
+An example:
+```
+.component1 .content-wrapper {
+  padding: 5px;
+}
+
+```
